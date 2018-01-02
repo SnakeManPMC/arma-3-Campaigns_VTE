@@ -60,43 +60,43 @@ class Campaign
 		// action missions
 		class patrol: MissionDefault
 		{
-			end1 = base;
+			pmc_end1 = base;
 			lost = patrol;
 			template = vte_seal_01_patrol.vte_nam_12;
 		};
 		class destroy: MissionDefault
 		{
-			end1 = base;
+			pmc_end1 = base;
 			lost = destroy;
 			template = vte_seal_02_destroy.vte_nam_12;
 		};
 		class snatch: MissionDefault
 		{
-			end1 = base;
+			pmc_end1 = base;
 			lost = snatch;
 			template = vte_seal_03_snatch.vte_nam_12;
 		};
 		class ambush: MissionDefault
 		{
-			end1 = base;
+			pmc_end1 = base;
 			lost = ambush;
 			template = vte_seal_04_ambush.vte_nam_12;
 		};
 		class assault: MissionDefault
 		{
-			end1 = base;
+			pmc_end1 = base;
 			lost = assault;
 			template = vte_seal_05_assault.vte_nam_12;
 		};
 		class defend: MissionDefault
 		{
-			end1 = base;
+			pmc_end1 = base;
 			lost = defend;
 			template = vte_seal_06_defend.vte_nam_12;
 		};
 		class recover: MissionDefault
 		{
-			end1 = base;
+			pmc_end1 = base;
 			lost = recover;
 			template = vte_seal_07_recover.vte_nam_12;
 		};

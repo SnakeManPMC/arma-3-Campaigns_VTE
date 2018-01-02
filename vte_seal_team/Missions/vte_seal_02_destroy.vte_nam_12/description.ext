@@ -5,3 +5,16 @@ onLoadIntro=$STRD_Rmissname;
 
 // Title that appears on screen at beginning of mission
 onLoadMission=$STRL_Rload;
+
+class CfgDebriefing
+{
+	class pmc_end1
+	{
+		title = "PMC End 1 Activated";
+		subtitle = "";
+		description = "Yeah pmc1_end1 rulez";
+		backgroundPicture = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
