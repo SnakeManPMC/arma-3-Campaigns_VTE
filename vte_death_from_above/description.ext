@@ -1,0 +1,122 @@
+/*
+
+	VTE Death From Above
+
+*/
+
+exitScore = -100;
+weaponPool = true;
+
+class MissionDefault
+{
+	lives = -1;
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+
+class Campaign
+{
+	briefingName = "VTE Death From Above";
+	author = "Snake Man, PMC.";
+	overviewText = "Aircombat in Vietnam.";
+	firstBattle = Beginning;
+
+	class Beginning
+	{
+		name = "Beginning";
+		cutscene = ;
+		firstMission = pmc0;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+		lost = ;
+
+		// campaign missions
+
+		class pmc0: MissionDefault
+		{
+			end1 = pmc1;
+			lost = pmc0;
+			template = pmc0.vte_australianao;
+		};
+
+		class pmc1: MissionDefault
+		{
+			end1 = pmc2;
+			lost = pmc1;
+			template = pmc1.vte_australianao;
+		};
+
+		class pmc2: MissionDefault
+		{
+			end1 = pmc3;
+			lost = pmc2;
+			template = pmc2.vte_australianao;
+		};
+
+		class pmc3: MissionDefault
+		{
+			end1 = pmc4;
+			lost = pmc3;
+			template = pmc3.vte_australianao;
+		};
+
+		class pmc4: MissionDefault
+		{
+			end1 = pmc5;
+			lost = pmc4;
+			template = pmc4.vte_australianao;
+		};
+
+		class pmc5: MissionDefault
+		{
+			end1 = pmc6;
+			lost = pmc5;
+			template = pmc5.vte_australianao;
+		};
+
+		class pmc6: MissionDefault
+		{
+			end1 = pmc7;
+			lost = pmc6;
+			template = pmc6.vte_australianao;
+		};
+
+		class pmc7: MissionDefault
+		{
+			end1 = pmc8;
+			lost = pmc7;
+			template = pmc7.vte_australianao;
+		};
+
+		class pmc8: MissionDefault
+		{
+			end1 = pmc9;
+			lost = pmc8;
+			template = pmc8.vte_australianao;
+		};
+
+		class pmc9: MissionDefault
+		{
+			end1 = pmc10;
+			lost = pmc9;
+			template = pmc9.vte_australianao;
+		};
+
+		//Final mission!
+		class pmc10: MissionDefault
+		{
+			end1 = ;
+			lost = pmc10;
+			template = pmc10.vte_australianao;
+		};
+	};
+};

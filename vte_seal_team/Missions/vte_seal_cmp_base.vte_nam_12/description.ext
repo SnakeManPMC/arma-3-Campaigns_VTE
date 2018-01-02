@@ -1,0 +1,5 @@
+author = "Snake Man, PMC.";
+onLoadIntro = "SEAL Campaign Base Mission";
+onLoadMission = "Base Camp";
+// no debriefing, just jump straight into the mission
+deBriefing = 0;

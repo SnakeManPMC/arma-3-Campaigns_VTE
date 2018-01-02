@@ -1,0 +1,95 @@
+version=11;
+class Mission
+{
+	randomSeed=11923971;
+	class Intel
+	{
+		briefingName="Khe Sahn debug";
+		startWeather=0.120000;
+		forecastWeather=0.300000;
+		year=1995;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6630.146484,81.477341,5743.351074};
+					id=0;
+					side="WEST";
+					vehicle="VTE_acofficer";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.600000;
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={6631.591797,82.486687,5744.913574};
+			a=0.000000;
+			b=0.000000;
+			activationBy="ALPHA";
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			text="End Mission";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=11915267;
+	class Intel
+	{
+		startWeather=0.120000;
+		forecastWeather=0.300000;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroWin
+{
+	randomSeed=9935363;
+	class Intel
+	{
+		startWeather=0.120000;
+		forecastWeather=0.300000;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	randomSeed=5776899;
+	class Intel
+	{
+		startWeather=0.120000;
+		forecastWeather=0.300000;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};

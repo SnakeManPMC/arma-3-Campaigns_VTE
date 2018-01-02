@@ -1,0 +1,704 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=128;
+	};
+	class MarkerIDProvider
+	{
+		nextID=41;
+	};
+	class Camera
+	{
+		pos[]={626.15265,69.819168,887.29828};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"vte_chara_cfg",
+	"A3_Ui_F",
+	"vte_weapons_cfg",
+	"VTE_objects_cfg"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=4;
+		class Item0
+		{
+			className="vte_chara_cfg";
+			name="vte_chara_cfg";
+		};
+		class Item1
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="vte_weapons_cfg";
+			name="vte_weapons_cfg";
+		};
+		class Item3
+		{
+			className="VTE_objects_cfg";
+			name="VTE_objects_cfg";
+		};
+	};
+};
+randomSeed=1732522;
+class ScenarioData
+{
+	author="PMC Since 1984";
+};
+class Intro
+{
+	class Intel
+	{
+		startWeather=0.39999998;
+		startWind=0.1;
+		forecastWeather=0.89999998;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		month=6;
+		day=1;
+		minute=5;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=9;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={614.59424,43.25631,891.54852};
+			class Attributes
+			{
+				onActivation="skiptime 5";
+				timeout[]={2,2,2};
+				interuptable=1;
+			};
+			id=96;
+			type="EmptyDetector";
+		};
+		class Item1
+		{
+			dataType="Trigger";
+			position[]={612.06866,43.106121,888.96924};
+			class Attributes
+			{
+				onActivation="skiptime 3";
+				timeout[]={5,5,5};
+				interuptable=1;
+			};
+			id=97;
+			type="EmptyDetector";
+		};
+		class Item2
+		{
+			dataType="Trigger";
+			position[]={610.94019,43.062122,887.41077};
+			class Attributes
+			{
+				onActivation="skiptime 3";
+				timeout[]={7,7,7};
+				interuptable=1;
+			};
+			id=98;
+			type="EmptyDetector";
+			atlOffset=3.8146973e-006;
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={609.32806,43.091034,886.38971};
+			class Attributes
+			{
+				onActivation="skiptime 3";
+				timeout[]={7,7,7};
+				interuptable=1;
+			};
+			id=99;
+			type="EmptyDetector";
+		};
+		class Item4
+		{
+			dataType="Trigger";
+			position[]={606.05011,43.27771,887.67944};
+			class Attributes
+			{
+				onActivation="skiptime 3";
+				timeout[]={9,9,9};
+				interuptable=1;
+			};
+			id=100;
+			type="EmptyDetector";
+		};
+		class Item5
+		{
+			dataType="Trigger";
+			position[]={605.56653,43.367458,889.50665};
+			class Attributes
+			{
+				onActivation="skiptime 7";
+				timeout[]={12,12,12};
+				interuptable=1;
+			};
+			id=101;
+			type="EmptyDetector";
+		};
+		class Item6
+		{
+			dataType="Trigger";
+			position[]={605.67401,43.438503,891.49506};
+			class Attributes
+			{
+				onActivation="skiptime 1";
+				timeout[]={14,14,14};
+				interuptable=1;
+			};
+			id=102;
+			type="EmptyDetector";
+		};
+		class Item7
+		{
+			dataType="Trigger";
+			position[]={618.5708,43.468403,895.25623};
+			class Attributes
+			{
+				timeout[]={20,20,20};
+				interuptable=1;
+				type="END1";
+			};
+			id=103;
+			type="EmptyDetector";
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={609.90643,43.330086,891.89954};
+						angles[]={6.2142959,0.97017264,6.272191};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this exec ""intro.sqs""";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=105;
+					type="VTE_Armyofficer";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=104;
+			atlOffset=55.549999;
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=8;
+		};
+		class Links
+		{
+			items=8;
+			class Item0
+			{
+				linkID=0;
+				item0=105;
+				item1=96;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=105;
+				item1=97;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=105;
+				item1=98;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=105;
+				item1=99;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=105;
+				item1=100;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+			class Item5
+			{
+				linkID=5;
+				item0=105;
+				item1=101;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+			class Item6
+			{
+				linkID=6;
+				item0=105;
+				item1=102;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+			class Item7
+			{
+				linkID=7;
+				item0=105;
+				item1=103;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+		};
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		startWeather=1;
+		startWind=0.1;
+		forecastWeather=1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		month=6;
+		day=2;
+		hour=8;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=17;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={623.80133,46.049816,912.07611};
+			name="s";
+			text="Your house";
+			type="mil_flag";
+			id=106;
+			atlOffset=1.224781;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={1230.9431,65.550003,2066.2314};
+			name="D";
+			text="Radio";
+			type="mil_circle";
+			id=107;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={1110.3396,169.60789,1485.7927};
+			name="k";
+			text="Don't enter!";
+			type="mil_warning";
+			colorName="ColorRed";
+			id=108;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={1049.2896,242.39047,1569.5186};
+			name="dl";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			a=700;
+			b=20;
+			id=109;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={1306.4082,0.065621078,978.1167};
+			name="dl_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			a=700;
+			b=20;
+			angle=307.10361;
+			id=110;
+			atlOffset=16.629581;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={421.81107,8.2498274,706.3288};
+			name="au";
+			text="AA Units";
+			type="mil_objective";
+			colorName="ColorRed";
+			id=111;
+		};
+		class Item6
+		{
+			dataType="Trigger";
+			position[]={416.46176,7.9990196,709.33685};
+			class Attributes
+			{
+				timeout[]={1,2,3};
+				interuptable=1;
+				activationType="NOT PRESENT";
+				activationBy="EAST";
+				effectTitle="I need those weapons!";
+				effectTitleType="TEXT";
+				effectTitleEffect="PLAIN DOWN";
+			};
+			id=112;
+			type="EmptyDetector";
+		};
+		class Item7
+		{
+			dataType="Trigger";
+			position[]={416.53778,8.0051527,709.33307};
+			class Attributes
+			{
+				timeout[]={10,11,12};
+				interuptable=1;
+				repeatable=1;
+				activationType="NOT PRESENT";
+				activationBy="EAST";
+				type="END1";
+				effectTitle="I need those weapons!";
+				effectTitleType="TEXT";
+				effectTitleEffect="PLAIN DOWN";
+			};
+			id=113;
+			type="EmptyDetector";
+		};
+		class Item8
+		{
+			dataType="Trigger";
+			position[]={633.87506,44.37508,908.30786};
+			class Attributes
+			{
+				onActivation="{ _x setVariable [""BIS_noCoreConversations"", true] } forEach allUnits;";
+				timeout[]={0,0,1};
+				interuptable=1;
+				activationBy="ANY";
+			};
+			id=114;
+			type="EmptyDetector";
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={625.18945,45.140797,914.57874};
+				angles[]={6.1934276,0.97017264,6.2721853};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="clearweaponcargo this; clearmagazinecargo this; this addweaponcargo [""VTE_Tokarevt33"",2]; this addmagazinecargo [""VTE_8Rnd_tokarevt33"",4]; this addweaponcargo [""VTE_K50M"",1]; this addmagazinecargo [""VTE_35Rnd_762x25"",1]; this setpos [(getPosASL this select 0),(getPosASL this select 1),1]";
+			};
+			id=115;
+			type="VTE_AmmoBoxUS";
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={411.56992,8.0478592,710.52075};
+				angles[]={6.2172809,3.4906585,0.083803542};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=116;
+			type="Land_VTE_vilbasket3";
+			atlOffset=0.0021572113;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={413.05072,8.1427364,709.36395};
+				angles[]={6.2172809,3.4906585,0.083803542};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=117;
+			type="Land_VTE_vilfire1";
+			atlOffset=0.0024132729;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={409.26993,9.0899019,711.44238};
+				angles[]={6.2172809,3.4906585,0.083803542};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=118;
+			type="Land_VTE_UStent_small";
+			atlOffset=0.0013613701;
+		};
+		class Item13
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={626.15265,44.820606,912.34827};
+						angles[]={6.1934276,5.3863201,6.2721853};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; this setIdentity ""a""; this addweapon ""itemcompass""; this addweapon ""Itemmap""";
+						name="a";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=120;
+					type="VTE_AuSAS1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=119;
+			atlOffset=55.549999;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={414.71667,7.8728929,709.67505};
+						angles[]={6.2172809,3.6086602,0.083803542};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+					};
+					id=122;
+					type="VTE_NVAaa";
+				};
+				class Item1
+				{
+					dataType="Waypoint";
+					position[]={412.27707,7.5445046,707.77625};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=123;
+					type="Move";
+					atlOffset=-4.7683716e-007;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=121;
+			atlOffset=55.549999;
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={412.20908,7.7758408,711.39606};
+						angles[]={6.2172809,3.4906585,0.083803542};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeallweapons this; this addmagazine ""VTE_35Rnd_762x25"";this addweapon ""VTE_K50M"";this addmagazine ""VTE_35Rnd_762x25"";this addmagazine ""VTE_35Rnd_762x25"";";
+					};
+					id=125;
+					type="VTE_NVAsoldier";
+					atlOffset=-4.7683716e-007;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=124;
+			atlOffset=55.549999;
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={415.88318,7.839489,707.68433};
+						angles[]={6.2172809,4.6934934,0.083803542};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeallweapons this; this addmagazine ""VTE_35Rnd_762x25"";this addweapon ""VTE_K50M"";this addmagazine ""VTE_35Rnd_762x25"";this addmagazine ""VTE_35Rnd_762x25"";";
+					};
+					id=127;
+					type="VTE_NVAsoldier";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=126;
+			atlOffset=55.549999;
+		};
+	};
+};
+class OutroLoose
+{
+	class Intel
+	{
+		startWeather=0.40000001;
+		startFog=0.60000002;
+		startWind=0.1;
+		forecastWeather=0.89999998;
+		forecastFog=0.60000002;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		year=1964;
+		month=10;
+		day=1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		startWeather=0.40000001;
+		startFog=0.60000002;
+		startWind=0.1;
+		forecastWeather=0.89999998;
+		forecastFog=0.60000002;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		year=1964;
+		month=10;
+		day=1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

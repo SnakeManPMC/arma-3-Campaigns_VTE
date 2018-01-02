@@ -1,0 +1,236 @@
+/*
+
+	VTE SEAL Team campaign by Snake Man, PMC.
+
+	https://www.vtemod.com
+
+*/
+
+exitScore = -100;
+weaponPool = true;
+
+class MissionDefault
+{
+	lives = -1;
+
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+
+class Campaign
+{
+	briefingName = "VTE SEAL Team";
+	author = "Snake Man, PMC.";
+	overviewText = "Choose your missions from the base. Get that charlie!";
+	firstBattle = Part1;
+
+	class Part1
+	{
+		name = "Start";
+
+		cutscene = vte_seal_cmp_cutscene01.vte_nam_12;
+
+		firstMission = base;
+		lost = ;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+
+		// base camp hq mission
+		class base: MissionDefault
+		{
+			end1 = patrol;
+			end2 = destroy;
+			end3 = snatch;
+			end4 = ambush;
+			end5 = assault;
+			end6 = defend;
+			lost = recover;
+			template = vte_seal_cmp_base.vte_nam_12;
+		};
+
+		// action missions
+		class patrol: MissionDefault
+		{
+			end1 = base;
+			lost = patrol;
+			template = vte_seal_01_patrol.vte_nam_12;
+		};
+		class destroy: MissionDefault
+		{
+			end1 = base;
+			lost = destroy;
+			template = vte_seal_02_destroy.vte_nam_12;
+		};
+		class snatch: MissionDefault
+		{
+			end1 = base;
+			lost = snatch;
+			template = vte_seal_03_snatch.vte_nam_12;
+		};
+		class ambush: MissionDefault
+		{
+			end1 = base;
+			lost = ambush;
+			template = vte_seal_04_ambush.vte_nam_12;
+		};
+		class assault: MissionDefault
+		{
+			end1 = base;
+			lost = assault;
+			template = vte_seal_05_assault.vte_nam_12;
+		};
+		class defend: MissionDefault
+		{
+			end1 = base;
+			lost = defend;
+			template = vte_seal_06_defend.vte_nam_12;
+		};
+		class recover: MissionDefault
+		{
+			end1 = base;
+			lost = recover;
+			template = vte_seal_07_recover.vte_nam_12;
+		};
+
+		// transparent cutscene
+		class cut: MissionDefault
+		{
+			end1 = base;
+			end2 = base;
+			end3 = base;
+			end4 = base;
+			end5 = base;
+			end6 = base;
+			lost = base;
+			template = vte_seal_cmp_cut.vte_nam_12;
+		};
+	};
+};
+
+class CfgIdentities
+{
+	// SEAL Team leader
+	class carlos
+	{
+		name = "Carlos Edwards";
+		face = "Camo_face_west_61";
+		glasses = "None";
+		speaker = "Rob";
+		pitch = 1;
+	};
+	// SEAL 2
+	class steve
+	{
+		name = "Steve Gross";
+		face = "Camo_face_west_60";
+		glasses = "none";
+		speaker = "George";
+		pitch = 1;
+	};
+	// SEAL 3
+	class gordon
+	{
+		name = "Gordon McKenzie";
+		face = "Camo_face_west_59";
+		glasses = "none";
+		speaker = "Jonah";
+		pitch = 1;
+	};
+	// SEAL 4
+	class roger
+	{
+		name = "Roger Tuchek";
+		face = "Camo_face_west_58";
+		glasses = "none";
+		speaker = "Greg";
+		pitch = 1;
+	};
+	// SEAL 5
+	class david
+	{
+		name = "David Ruby";
+		face = "Camo_face_west_57";
+		glasses = "none";
+		speaker = "John";
+		pitch = 1;
+	};
+	// SEAL 6
+	class bob
+	{
+		name = "Bob Walton";
+		face = "Camo_face_west_56";
+		glasses = "none";
+		speaker = "Marc";
+		pitch = 1;
+	};
+};
+
+class CfgRadio
+{
+	sounds[] = {};
+
+	class Rpatrol1
+	{
+		name = "Rpatrol1";
+		sound[] = {"Rpatrol1.ogg", db+0, 1};
+		title = "$STRM_Rpatrol1";
+	};
+
+	class RcallExtract
+	{
+		name = "RcallExtract";
+		sound[] = {"RcallExtract.ogg", db+0, 1};
+		title = "$STRM_RcallExtract";
+	};
+
+	class RextractOnWay
+	{
+		name = "RextractOnWay";
+		sound[] = {"RextractOnWay.ogg", db+0, 1};
+		title = "$STRM_RextractOnWay";
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"Rmcomplete.ogg", db+0, 1};
+		title = "$STRM_Rmcomplete";
+	};
+
+	class Rinsert
+	{
+		name = "Rinsert";
+		sound[] = {"Rinsert.ogg", db+0, 1};
+		title = "$STRM_Rinsert";
+	};
+
+	class Rgoodluck
+	{
+		name = "Rgoodluck";
+		sound[] = {"Rgoodluck.ogg", db+0, 1};
+		title = "$STRM_Rgoodluck";
+	};
+
+	class Rextract
+	{
+		name = "Rextract";
+		sound[] = {"Rextract.ogg", db+0, 1};
+		title = "$STRM_Rextract";
+	};
+
+	class Rdustoff
+	{
+		name = "Rdustoff";
+		sound[] = {"Rdustoff.ogg", db+0, 1};
+		title = "$STRM_Rdustoff";
+	};
+};

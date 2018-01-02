@@ -1,0 +1,18 @@
+LANGUAGE,English,French,Italian,Spanish,German,Comment,,,,,
+STRC_01,,
+
+STRCN_00,Training,Training,Training,Training,Training, Name of the mission
+STRM_Rpatrol1,"Alpha Black to PapaBear. Patrol complete. Over.",alpha
+STRM_RcallExtract,"Alpha to Bravo. We need that extract now. Over.",alpha
+STRM_RextractOnWay,"Understood, we're on our way. Bravo out.",bravo
+STRM_Rmcomplete,"PapaBear to Alpha Black. Copy that, patrol complete. Out.",hq
+
+STRM_Rinsert,"BRAVO TO ALPHA. INSERTION LZ IN SIGHT, GET READY. OVER.",bravo
+STRM_Rgoodluck,"GOOD LUCK ALPHA BLACK. CALL US WHEN YOURE READY. BRAVO OUT.",bravo
+STRM_Rextract,"BRAVO TO ALPHA. GET READY FOR EXTRACTION. OVER.",bravo
+STRM_Rdustoff,"LIFTOFF. GOING HOME. OVER.",bravo
+
+start marker name string
+STR_START,Start
+STR_INSERT,Insert LZ
+STR_EXTRACT,Extract LZ

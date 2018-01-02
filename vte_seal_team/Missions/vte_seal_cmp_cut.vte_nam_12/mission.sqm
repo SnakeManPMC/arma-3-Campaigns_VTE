@@ -1,0 +1,237 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=9;
+	};
+	class Camera
+	{
+		pos[]={6601.7744,50,6377.1025};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"vte_chara_cfg"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="vte_chara_cfg";
+			name="vte_chara_cfg";
+		};
+	};
+};
+randomSeed=16745782;
+class ScenarioData
+{
+	author="PMC Since 1984";
+};
+class Intro
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=8;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={5989.7656,29.059799,4822.0435};
+			class Attributes
+			{
+				text="END";
+				condition="SEAL_Ending1";
+				sizeA=0;
+				sizeB=0;
+				type="END1";
+			};
+			id=0;
+			type="EmptyDetector";
+			atlOffset=-3.2288857;
+		};
+		class Item1
+		{
+			dataType="Trigger";
+			position[]={5991.7744,29.541571,4817.6914};
+			class Attributes
+			{
+				text="END";
+				condition="SEAL_Ending2";
+				sizeA=0;
+				sizeB=0;
+				type="END2";
+			};
+			id=1;
+			type="EmptyDetector";
+			atlOffset=-3.2823849;
+		};
+		class Item2
+		{
+			dataType="Trigger";
+			position[]={5994.1177,30.060423,4813.0044};
+			class Attributes
+			{
+				text="END";
+				condition="SEAL_Ending3";
+				sizeA=0;
+				sizeB=0;
+				type="END3";
+			};
+			id=2;
+			type="EmptyDetector";
+			atlOffset=-3.3400478;
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={5997.4658,30.616302,4807.9829};
+			class Attributes
+			{
+				text="END";
+				condition="SEAL_Ending4";
+				sizeA=0;
+				sizeB=0;
+				type="END4";
+			};
+			id=3;
+			type="EmptyDetector";
+			atlOffset=-3.4018326;
+		};
+		class Item4
+		{
+			dataType="Trigger";
+			position[]={6000.1436,31.172289,4802.9604};
+			class Attributes
+			{
+				text="END";
+				condition="SEAL_Ending5";
+				sizeA=0;
+				sizeB=0;
+				type="END5";
+			};
+			id=4;
+			type="EmptyDetector";
+			atlOffset=-3.4636059;
+		};
+		class Item5
+		{
+			dataType="Trigger";
+			position[]={6003.1567,31.685457,4797.9395};
+			class Attributes
+			{
+				text="END";
+				condition="SEAL_Ending6";
+				sizeA=0;
+				sizeB=0;
+				type="END6";
+			};
+			id=5;
+			type="EmptyDetector";
+			atlOffset=-3.5206127;
+		};
+		class Item6
+		{
+			dataType="Trigger";
+			position[]={6005.8359,32.025219,4792.5825};
+			class Attributes
+			{
+				text="END";
+				condition="SEAL_Ending7";
+				sizeA=0;
+				sizeB=0;
+				type="LOOSE";
+			};
+			id=6;
+			type="EmptyDetector";
+			atlOffset=-3.5583534;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5978.5044,33.631023,4811.1914};
+						angles[]={0.12238473,0,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.73333299;
+						rank="CAPTAIN";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=8;
+					type="VTE_sealtl";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=7;
+			atlOffset=55.549999;
+		};
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="SEAL Campaign cutscene 3";
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

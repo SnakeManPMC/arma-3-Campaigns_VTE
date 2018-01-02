@@ -1,0 +1,406 @@
+//
+//	VTE terrain overview & debug campaign
+// 
+
+exitScore = -100;
+
+class MissionDefault
+{
+ 	lives = -1;
+
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+
+class Campaign
+{
+	briefingName = "PMC VTE Terrain debug";
+	author = "Snake Man, PMC.";
+	overviewText = "Debug all the VTE terrains pretty automatic way.";
+	firstBattle = Beginning;
+
+	class Beginning
+	{
+		name = "Beginning";
+		cutscene = ;
+		firstMission = cut_001;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+		lost = ;
+
+		class cut_001: MissionDefault
+		{
+			end1 = cut_002;
+			template = vte_debug_cmp_01.VTE_intro;
+		};
+
+		class cut_002: cut_001
+		{
+			end1 = cut_003;
+			template = vte_debug_cmp_02.vte_nam_12;
+		};
+
+		class cut_003: cut_001
+		{
+			end1 = cut_004;
+			template = vte_debug_cmp_03.vte_nam_25;
+		};
+
+		class cut_004: cut_001
+		{
+			end1 = cut_005;
+			template = vte_debug_cmp_04.VTE_7M;
+		};
+
+		class cut_005: cut_001
+		{
+			end1 = cut_006;
+			template = vte_debug_cmp_05.VTE_Ashau;
+		};
+
+		class cut_006: cut_001
+		{
+			end1 = cut_007;
+			template = vte_debug_cmp_06.VTE_AustralianAO;
+		};
+
+		class cut_007: cut_001
+		{
+			end1 = cut_008;
+			template = vte_debug_cmp_07.VTE_Bra;
+		};
+
+		class cut_008: cut_001
+		{
+			end1 = cut_009;
+			template = vte_debug_cmp_08.VTE_Dak_Seang;
+		};
+
+		class cut_009: cut_001
+		{
+			end1 = cut_010;
+			template = vte_debug_cmp_09.VTE_KheSanh;
+		};
+
+		class cut_010: cut_001
+		{
+			end1 = cut_011;
+			template = vte_debug_cmp_10.VTE_Ia_Drang;
+		};
+
+		class cut_011: cut_001
+		{
+			end1 = cut_012;
+			template = vte_debug_cmp_11.VTE_IronTriangle;
+		};
+
+		class cut_012: cut_001
+		{
+			end1 = cut_013;
+			template = vte_debug_cmp_12.VTE_Ilo;
+		};
+
+		class cut_013: cut_001
+		{
+			end1 = cut_014;
+			template = vte_debug_cmp_13.VTE_IIICTZA;
+		};
+
+		class cut_014: cut_001
+		{
+			end1 = cut_015;
+			template = vte_debug_cmp_14.VTE_LongSon;
+		};
+
+		class cut_015: cut_001
+		{
+			end1 = cut_016;
+			template = vte_debug_cmp_15.VTE_MDSZ;
+		};
+
+		class cut_016: cut_001
+		{
+			end1 = cut_017;
+			template = vte_debug_cmp_16.VTE_MeeKong;
+		};
+
+		class cut_017: cut_001
+		{
+			end1 = cut_018;
+			template = vte_debug_cmp_17.VTE_PoleiKleng;
+		};
+
+		class cut_018: cut_001
+		{
+			end1 = cut_019;
+			template = vte_debug_cmp_18.VTE_QuanBinhSon;
+		};
+
+		class cut_019: cut_001
+		{
+			end1 = cut_020;
+			template = vte_debug_cmp_19.VTE_RIJ;
+		};
+
+		class cut_020: cut_001
+		{
+			end1 = cut_021;
+			template = vte_debug_cmp_20.VTE_RSSZ;
+		};
+
+		class cut_021: cut_001
+		{
+			end1 = cut_022;
+			template = vte_debug_cmp_21.VTE_VinhThanh;
+		};
+
+		class cut_022: cut_001
+		{
+			end1 = cut_023;
+			template = vte_debug_cmp_22.vte_gao_rung;
+		};
+
+		class cut_023: cut_001
+		{
+			end1 = cut_024;
+			template = vte_debug_cmp_23.vte_nui_chet;
+		};
+
+		class cut_024: cut_001
+		{
+			end1 = cut_025;
+			template = vte_debug_cmp_24.VTE_FSB_Gloria;
+		};
+
+		class cut_025: cut_001
+		{
+			end1 = cut_026;
+			template = vte_debug_cmp_25.VTE_Tet68;
+		};
+		
+		// new terrains in v1.5
+		class cut_026: cut_001
+		{
+			end1 = cut_027;
+			template = vte_debug_cmp_26.VTE_ku_bao_tien;
+		};
+
+		class cut_027: cut_001
+		{
+			end1 = cut_028;
+			template = vte_debug_cmp_27.VTE_pu_mat;
+		};
+
+		class cut_028: cut_001
+		{
+			end1 = pmc0;
+			template = vte_debug_cmp_28.VTE_si_thau;
+		};
+
+		// player driven missions
+		class pmc0: MissionDefault
+		{
+			end1 = pmc1;
+			template = snake_vte_debug_cmp-01.VTE_intro;
+		};
+
+		class pmc1: MissionDefault
+		{
+			end1 = pmc2;
+			lost = pmc1;
+			template = snake_vte_debug_cmp-02.vte_nam_12;
+		};
+
+		class pmc2: MissionDefault
+		{
+			end1 = pmc3;
+			lost = pmc2;
+			template = snake_vte_debug_cmp-03.vte_nam_25;
+		};
+
+		class pmc3: MissionDefault
+		{
+			end1 = pmc4;
+			lost = pmc3;
+			template = snake_vte_debug_cmp-04.VTE_7M;
+		};
+
+		class pmc4: MissionDefault
+		{
+			end1 = pmc5;
+			lost = pmc4;
+			template = snake_vte_debug_cmp-05.VTE_Ashau;
+		};
+
+		class pmc5: MissionDefault
+		{
+			end1 = pmc6;
+			lost = pmc5;
+			template = snake_vte_debug_cmp-06.VTE_AustralianAO;
+		};
+
+		class pmc6: MissionDefault
+		{
+			end1 = pmc7;
+			lost = pmc6;
+			template = snake_vte_debug_cmp-07.VTE_Bra;
+		};
+
+		class pmc7: MissionDefault
+		{
+			end1 = pmc8;
+			lost = pmc7;
+			template = snake_vte_debug_cmp-08.VTE_Dak_Seang;
+		};
+
+		class pmc8: MissionDefault
+		{
+			end1 = pmc9;
+			lost = pmc8;
+			template = snake_vte_debug_cmp-09.VTE_KheSanh;
+		};
+
+		class pmc9: MissionDefault
+		{
+			end1 = pmc10;
+			lost = pmc9;
+			template = snake_vte_debug_cmp-10.VTE_Ia_Drang;
+		};
+
+		class pmc10: MissionDefault
+		{
+			end1 = pmc11;
+			lost = pmc10;
+			template = snake_vte_debug_cmp-11.VTE_IronTriangle;
+		};
+
+		class pmc11: MissionDefault
+		{
+			end1 = pmc12;
+			lost = pmc11;
+			template = snake_vte_debug_cmp-12.VTE_Ilo;
+		};
+
+		class pmc12: MissionDefault
+		{
+			end1 = pmc13;
+			lost = pmc12;
+			template = snake_vte_debug_cmp-13.VTE_IIICTZA;
+		};
+
+		class pmc13: MissionDefault
+		{
+			end1 = pmc14;
+			lost = pmc13;
+			template = snake_vte_debug_cmp-14.VTE_LongSon;
+		};
+
+		class pmc14: MissionDefault
+		{
+			end1 = pmc15;
+			lost = pmc14;
+			template = snake_vte_debug_cmp-15.VTE_MDSZ;
+		};
+
+		class pmc15: MissionDefault
+		{
+			end1 = pmc16;
+			lost = pmc15;
+			template = snake_vte_debug_cmp-16.VTE_MeeKong;
+		};
+
+		class pmc16: MissionDefault
+		{
+			end1 = pmc17;
+			lost = pmc16;
+			template = snake_vte_debug_cmp-17.VTE_PoleiKleng;
+		};
+
+		class pmc17: MissionDefault
+		{
+			end1 = pmc18;
+			lost = pmc17;
+			template = snake_vte_debug_cmp-18.VTE_QuanBinhSon;
+		};
+
+		class pmc18: MissionDefault
+		{
+			end1 = pmc19;
+			lost = pmc18;
+			template = snake_vte_debug_cmp-19.VTE_RIJ;
+		};
+
+		class pmc19: MissionDefault
+		{
+			end1 = pmc20;
+			lost = pmc19;
+			template = snake_vte_debug_cmp-20.VTE_RSSZ;
+		};
+
+		class pmc20: MissionDefault
+		{
+			end1 = pmc21;
+			lost = pmc20;
+			template = snake_vte_debug_cmp-21.VTE_VinhThanh;
+		};
+
+		class pmc21: MissionDefault
+		{
+			end1 = pmc22;
+			lost = pmc21;
+			template = snake_vte_debug_cmp-22.vte_gao_rung;
+		};
+
+		class pmc22: MissionDefault
+		{
+			end1 = pmc23;
+			lost = pmc22;
+			template = snake_vte_debug_cmp-23.vte_nui_chet;
+		};
+
+		class pmc23: MissionDefault
+		{
+			end1 = pmc24;
+			lost = pmc23;
+			template = snake_vte_debug_cmp-24.VTE_FSB_Gloria;
+		};
+
+		class pmc24: MissionDefault
+		{
+			end1 = pmc25;
+			lost = pmc24;
+			template = snake_vte_debug_cmp-25.VTE_Tet68;
+		};
+
+		// new terrains in v1.5
+		class pmc25: MissionDefault
+		{
+			end1 = pmc26;
+			lost = pmc25;
+			template = snake_vte_debug_cmp-26.VTE_ku_bao_tien;
+		};
+
+		class pmc26: MissionDefault
+		{
+			end1 = pmc27;
+			lost = pmc26;
+			template = snake_vte_debug_cmp-27.VTE_pu_mat;
+		};
+
+		class pmc27: MissionDefault
+		{
+			end1 = ;
+			lost = pmc27;
+			template = snake_vte_debug_cmp-27.VTE_si_thau;
+		};
+	};
+};

@@ -1,0 +1,16 @@
+LANGUAGE,English,French,Italian,Spanish,German,Comment,,,,,
+STRC_01,,
+
+STRD_Rmissname,"SEAL Defend",missionname
+STRL_Rload,"SEAL TEAM",loadname
+
+start marker name string
+STR_START,Start
+STR_INSERT,Insert LZ
+STR_EXTRACT,Extract LZ
+
+target marker name strings
+STR_TARGET1,Defend 1
+STR_TARGET2,Defend 2
+STR_TARGET3,Defend 3
+STR_TARGET4,Defend 4

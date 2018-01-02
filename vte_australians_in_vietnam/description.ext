@@ -1,0 +1,230 @@
+class MissionDefault
+{
+ 	lives = -1;
+
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+
+class Campaign
+{
+	briefingName = "VTE Australians In Vietnam";
+	author = "Banana, VTE.";
+	overviewText = "-";
+	firstBattle = Chapter1;
+	disableMP = true;
+
+	class Chapter1
+	{
+		name = "Chapter1";
+		
+		cutscene = ;
+
+		firstMission = Mission1;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+		lost = ;
+
+		class Mission1: MissionDefault
+		{
+			end1 = Mission2;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission1;
+			template = Mission1.VTE_Polei_Kleng;
+		};
+		
+		class Mission2: MissionDefault
+		{
+			end1 = Mission3;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission2;
+			template = Mission2.VTE_Dak_Seang;
+		};
+		
+		class Mission3: MissionDefault
+		{
+			end1 = Mission4;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission3;
+			template = Mission3.VTE_Dak_Seang;
+		};
+		
+		class Mission4: MissionDefault
+		{
+			end1 = Mission5;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission4;
+			template = Mission4.VTE_Dak_Seang;
+		};
+		
+		class Mission5: MissionDefault
+		{
+			end1 = Mission6;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission5;
+			template = Mission5.VTE_Dak_Seang;
+		};
+		
+		class Mission6: MissionDefault
+		{
+			end1 = Mission7;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission6;
+			template = Mission6.vte_ashau;
+
+		};
+
+		class Mission7: MissionDefault
+		{
+			end1 = Mission8;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission7;
+			template = Mission7.vte_ashau;
+		};
+
+		class Mission8: MissionDefault
+		{
+			end1 = Mission9;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission8;
+			template = Mission8.vte_ashau;
+		};
+
+		class Mission9: MissionDefault
+		{
+			end1 = Mission10;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission9;
+			template = Mission9.vte_7m;
+		};
+
+		class Mission10: MissionDefault
+		{
+			end1 = Mission11;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission10;
+			template = Mission10.vte_7m;
+		};
+
+		class Mission11: MissionDefault
+		{
+			end1 = Mission12;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission11;
+			template = Mission11.vte_7m;
+		};
+
+		class Mission12: MissionDefault
+		{
+			end1 = Mission13;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission12;
+			template = Mission12.VTE_Iron_Triangle;
+		};
+
+		class Mission13: MissionDefault
+		{
+			end1 = Mission14;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission13;
+			template = Mission13.VTE_Iron_Triangle;
+		};
+
+		class Mission14: MissionDefault
+		{
+			end1 = Mission15;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission14;
+			template = Mission14.VTE_Iron_Triangle;
+		};
+
+		class Mission15: MissionDefault
+		{
+			end1 = Mission16;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission15;
+			template = Mission15.VTE_MDSZ;
+		};
+
+		class Mission16: MissionDefault
+		{
+			end1 = Mission16;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = Mission16;
+			template = Mission16.VTE_Dak_Seang;
+		};
+	};
+};

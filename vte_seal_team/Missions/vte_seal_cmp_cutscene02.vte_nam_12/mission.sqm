@@ -1,0 +1,269 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=74;
+	};
+	class MarkerIDProvider
+	{
+		nextID=4;
+	};
+	class Camera
+	{
+		pos[]={547.2937,32.450001,6728.5967};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,0};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"vte_chara_cfg"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="vte_chara_cfg";
+			name="vte_chara_cfg";
+		};
+	};
+};
+randomSeed=12348855;
+class ScenarioData
+{
+	author="PMC Since 1984";
+};
+class Intro
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=3;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={5992.2056,27.844261,4833.0239};
+			class Attributes
+			{
+				text="END";
+				condition="endcut";
+				sizeA=0;
+				sizeB=0;
+				type="END1";
+			};
+			id=64;
+			type="EmptyDetector";
+			atlOffset=-3.0938072;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5906.582,28.851439,4940.5688};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=1;
+						rank="CAPTAIN";
+						init="seals1=group this; seals1 setBehaviour ""SAFE"";";
+						name="seal1";
+					};
+					id=66;
+					type="VTE_sealtl";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5911.582,28.851439,4935.6187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="ERROR";
+						name="seal4";
+					};
+					id=67;
+					type="VTE_sealrto";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5901.582,28.851439,4935.6187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="SERGEANT";
+						name="seal3";
+					};
+					id=68;
+					type="VTE_sealmg";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5916.582,28.851439,4930.6187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="SERGEANT";
+						name="seal2";
+					};
+					id=69;
+					type="VTE_seal";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5896.582,28.851439,4930.6187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="SERGEANT";
+						name="seal5";
+					};
+					id=70;
+					type="VTE_sealmedic";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5921.582,28.851439,4925.6187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="SERGEANT";
+						name="seal6";
+					};
+					id=71;
+					type="VTE_sealgl";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=65;
+			atlOffset=55.549999;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5978.5044,33.631023,4811.1914};
+						angles[]={0.12238473,0,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.73333299;
+						rank="CAPTAIN";
+						init="titleCut ["""",""black out"",0.0001]; this exec ""movie.sqs"";";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=73;
+					type="VTE_sealtl";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=72;
+			atlOffset=55.549999;
+		};
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="SEAL Campaign cutscene 2";
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

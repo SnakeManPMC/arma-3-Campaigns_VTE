@@ -1,0 +1,46 @@
+author = "Banana, VTE.";
+respawn=3;
+respawndelay=20;
+respawnVehicle=3;
+respawnVehicleDelay=400;
+
+onLoadMission="Mission 5-Jungle's Hell";
+
+titleParam1 = "Takko";
+valuesParam1[] = {10000, 300, 600, 900, 1200, 1500, 1800, 2700, 3600, 7200};
+defValueParam1 = 1800;
+textsParam1[] = {$STR_MP_NOLIMIT, $STR_MP_TIME_05, $STR_MP_TIME_10, $STR_MP_TIME_15, $STR_MP_TIME_20, $STR_MP_TIME_25, $STR_MP_TIME_30, $STR_MP_TIME_45, $STR_MP_TIME_60, $STR_MP_TIME_120};
+
+titleParam2 = $STR_MP_SCORE;
+valuesParam2[] = {10000, 5, 7, 10, 15, 20, 25, 30};
+defValueParam2 = 5;
+textsParam2[] = {$STR_MP_NOLIMIT, 5, 7, 10, 15, 20, 25, 30};
+disabledAI=1;
+
+class Header
+{
+  gameType = TA;
+  minPlayers = 2;
+  maxPlayers = 24;
+};
+class CfgIdentities
+{
+	class a
+  	{
+		name = "Joe Nei'l";
+		face = "2";
+		glasses = "Spectacles";
+		speaker = "Male04EN";
+		pitch = 1.0;
+  	};
+  	
+  	class u
+	{
+		name = "Phiel";
+		face = "Default";
+		glasses = "Spectacles";
+		speaker = "Male01EN";
+		pitch = 1.0;
+	};
+	
+};

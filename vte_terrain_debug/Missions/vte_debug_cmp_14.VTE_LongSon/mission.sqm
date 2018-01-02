@@ -1,0 +1,131 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg",
+		"vte_weapons_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=8583171;
+	class Intel
+	{
+		briefingName="Long Son debug";
+		startWeather=0;
+		forecastWeather=0;
+		month=7;
+		day=1;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1853.8137,181.07893,1408.6226};
+					id=0;
+					side="WEST";
+					vehicle="VTE_acofficer";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="this = [3200, 400, 20] execVM ""movie_debug.sqf"";";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1855.259,180.92932,1410.1851};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="endcut";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=9010179;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=16145411;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=10049027;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};

@@ -1,0 +1,16 @@
+LANGUAGE,English,French,Italian,Spanish,German,Comment,,,,,
+STRC_01,,
+
+STRD_Rmissname,"SEAL Ambush",missionname
+STRL_Rload,"SEAL TEAM",loadname
+
+start marker name string
+STR_START,Start
+STR_INSERT,Insert LZ
+STR_EXTRACT,Extract LZ
+
+target marker name strings
+STR_TARGET1,Ambush 1
+STR_TARGET2,Ambush 2
+STR_TARGET3,Ambush 3
+STR_TARGET4,Ambush 4

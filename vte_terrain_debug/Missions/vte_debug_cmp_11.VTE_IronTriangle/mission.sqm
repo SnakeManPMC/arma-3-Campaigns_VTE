@@ -1,0 +1,137 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg",
+		"vte_weapons_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=12881411;
+	class Intel
+	{
+		briefingName="Iron Triangle debug";
+		startWeather=0;
+		forecastWeather=0;
+		month=7;
+		day=1;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1635.2676,6.4678578,1449.5615};
+					id=0;
+					side="WEST";
+					vehicle="VTE_acofficer";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="this = [3200, 800, 10] execVM ""movie_debug.sqf"";";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1636.7129,6.5461669,1451.124};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="endcut";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=12254723;
+	class Intel
+	{
+		startWeather=0.40000001;
+		startFog=0.60000002;
+		forecastWeather=0.89999998;
+		forecastFog=0.60000002;
+		year=1964;
+		month=10;
+		day=1;
+		hour=5;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=7317507;
+	class Intel
+	{
+		startWeather=0.40000001;
+		startFog=0.60000002;
+		forecastWeather=0.89999998;
+		forecastFog=0.60000002;
+		year=1964;
+		month=10;
+		day=1;
+		hour=5;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=13745667;
+	class Intel
+	{
+		startWeather=0.40000001;
+		startFog=0.60000002;
+		forecastWeather=0.89999998;
+		forecastFog=0.60000002;
+		year=1964;
+		month=10;
+		day=1;
+		hour=5;
+	};
+};

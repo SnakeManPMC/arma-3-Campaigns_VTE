@@ -1,0 +1,54 @@
+;Introsequenz
+titleCut [" ", "BLACK IN"]; titleFadeOut 4
+
+;Position 1 Flugzeug
+;=== 15:49:04
+_camera = "camera" camCreate [74043.14,70594.86,-31555.12]]
+_camera camPrepareTarget [74043.14,70594.86,-31555.12]
+_camera camPreparePos [4703.01,5840.09,16.46]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+
+
+
+_camera cameraEffect ["Internal","back"]
+showcinemaborder true
+
+;=== 23:15:27
+_camera camPrepareTarget [-67373.16,-62332.03,-12543.57]
+_camera camPreparePos [4703.02,5835.96,9.05]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 10
+@camCommitted _camera
+
+;=== 23:15:47
+_camera camPrepareTarget [-42362.36,93166.64,-12532.70]
+_camera camPreparePos [4696.85,5832.81,13.04]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 6
+@camCommitted _camera
+
+;=== 23:16:41
+_camera camPrepareTarget [-71452.09,69390.87,-14009.29]
+_camera camPreparePos [4547.70,5936.69,1.35]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 10
+@camCommitted _camera
+
+;=== 23:16:56
+_camera camPrepareTarget [9951.21,104799.10,-14010.04]
+_camera camPreparePos [4544.56,5938.09,1.35]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 5
+@camCommitted _camera
+
+
+
+@camCommitted _camera
+
+
+
+
+

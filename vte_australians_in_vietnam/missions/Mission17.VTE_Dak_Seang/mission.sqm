@@ -1,0 +1,459 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=380;
+	};
+	class MarkerIDProvider
+	{
+		nextID=7;
+	};
+	class Camera
+	{
+		pos[]={4558.292,58.299999,5906.8066};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"VTE_objects_cfg",
+	"vte_weapons_cfg",
+	"vte_chara_cfg"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="VTE_objects_cfg";
+			name="VTE_objects_cfg";
+		};
+		class Item1
+		{
+			className="vte_weapons_cfg";
+			name="vte_weapons_cfg";
+		};
+		class Item2
+		{
+			className="vte_chara_cfg";
+			name="vte_chara_cfg";
+		};
+	};
+};
+randomSeed=830728;
+class ScenarioData
+{
+	author="PMC Since 1984";
+};
+class Intro
+{
+	class Intel
+	{
+		startFog=0.54571313;
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		month=10;
+		hour=10;
+		minute=5;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		month=10;
+		day=12;
+		hour=10;
+		minute=5;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=12;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={4567.6514,33.299999,5931.4927};
+			class Attributes
+			{
+				onActivation="{ _x setVariable [""BIS_noCoreConversations"", true] } forEach allUnits;";
+				timeout[]={0,0,1};
+				interuptable=1;
+				activationBy="ANY";
+			};
+			id=359;
+			type="EmptyDetector";
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4564.2476,33.726044,5929.7456};
+				angles[]={-0,3.0599115,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=360;
+			type="Land_VTE_vilfire1";
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4567.4219,33.529999,5928.605};
+				angles[]={-0,3.0599115,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=361;
+			type="Land_VTE_vilpot1";
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4562.8506,33.405361,5941.6372};
+				angles[]={-0,5.2745285,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="clearweaponcargo this;this addweaponcargo [""VTE_L1A1"",7]; this addweaponcargo [""VTE_MPL"",3]; this addweaponcargo [""VTE_ex41"",1]; this addweaponcargo [""VTE_Mosin"",1]; this addmagazinecargo [""VTE_5Rnd_762x54"",3]";
+			};
+			id=362;
+			type="VTE_WeaponBoxUS";
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4557.6924,34.847225,5932.5396};
+				angles[]={-0,5.444447,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=363;
+			type="Land_VTE_UStent_small";
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4558.292,33.301437,5931.8564};
+						angles[]={-0,5.444447,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; a moveincargo e; this setIdentity ""a"";  this addweapon ""ItemMap""; this addmagazine ""VTE_1Rnd_40mm_HE""; this addweapon ""VTE_Ex41"";this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addweapon ""itemradio""; this addweapon ""itemcompass""; this addmagazine ""Mine"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE""; this addmagazine ""SatchelCharge_Remote_Mag""";
+						name="a";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=365;
+					type="VTE_AuSAS1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=364;
+			atlOffset=-9.9499998;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4556.4814,33.301437,5933.416};
+						angles[]={-0,2.3372617,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="this switchmove ""sitRfl_L_BidleLoop"";";
+						name="b";
+					};
+					id=367;
+					type="VTE_AuSAS4";
+				};
+				class Item1
+				{
+					dataType="Waypoint";
+					position[]={4637.1753,33.299999,5860.229};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=368;
+					type="Move";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=366;
+			atlOffset=-9.9499998;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4563.8193,33.301437,5933.314};
+						angles[]={-0,2.6179938,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="removeallweapons this; this switchmove ""sitRfl_L_BidleLoop""; this addweapon ""VTE_K50M""";
+						name="r";
+					};
+					id=370;
+					type="VTE_AuSAS1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=369;
+			atlOffset=-9.9499998;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4561.3677,33.301437,5926.1035};
+						angles[]={-0,1.8809086,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+					};
+					id=372;
+					type="VTE_AuSol7";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=371;
+			atlOffset=-9.9499998;
+		};
+		class Item9
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4562.188,33.301437,5923.8965};
+						angles[]={-0,3.3476586,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="this moveincargo e; this setface ""face3""";
+					};
+					id=374;
+					type="VTE_AuSAS3";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=373;
+			atlOffset=-9.9499998;
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4563.2427,33.301437,5926.498};
+						angles[]={-0,3.3476639,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this addmagazine ""VTE_90mmrocket"";this addweapon ""VTE_90mmrecoiless"";";
+					};
+					id=376;
+					type="VTE_AuSAS6";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=375;
+			atlOffset=-9.9499998;
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4557.8872,33.301437,5933.4639};
+						angles[]={-0,3.7814128,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this switchmove ""sitRfl_L_BidleLoop"";";
+					};
+					id=378;
+					type="VTE_AuSAS4";
+				};
+				class Item1
+				{
+					dataType="Waypoint";
+					position[]={4638.5732,33.299999,5857.4307};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=379;
+					type="Move";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=377;
+			atlOffset=-9.9499998;
+		};
+	};
+};
+class OutroLoose
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

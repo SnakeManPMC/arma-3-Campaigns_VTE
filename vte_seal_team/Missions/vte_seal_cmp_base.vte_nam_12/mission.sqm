@@ -1,0 +1,361 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=89;
+	};
+	class MarkerIDProvider
+	{
+		nextID=5;
+	};
+	class Camera
+	{
+		pos[]={546.00928,32.450001,6729.4072};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"vte_chara_cfg"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="vte_chara_cfg";
+			name="vte_chara_cfg";
+		};
+	};
+};
+randomSeed=4027407;
+class ScenarioData
+{
+	author="PMC Since 1984";
+};
+class Intro
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="SEAL Base";
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		month=1;
+		day=1;
+		hour=6;
+		minute=0;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=9;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={545.98645,6.7049999,6759.1855};
+			name="start";
+			text="@STR_START";
+			type="mil_start";
+			colorName="ColorGreen";
+			id=74;
+			atlOffset=-0.74499989;
+		};
+		class Item1
+		{
+			dataType="Trigger";
+			position[]={919.86884,2.8666589,6888.5898};
+			class Attributes
+			{
+				text="null";
+				sizeA=0;
+				sizeB=0;
+				activationBy="ALPHA";
+				type="END1";
+			};
+			id=75;
+			type="EmptyDetector";
+			atlOffset=35.332989;
+		};
+		class Item2
+		{
+			dataType="Trigger";
+			position[]={929.42188,2.8666589,6871.228};
+			class Attributes
+			{
+				text="null";
+				sizeA=0;
+				sizeB=0;
+				activationBy="BRAVO";
+				type="END2";
+			};
+			id=76;
+			type="EmptyDetector";
+			atlOffset=35.712452;
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={937.12994,2.8666589,6858.2134};
+			class Attributes
+			{
+				text="null";
+				sizeA=0;
+				sizeB=0;
+				activationBy="CHARLIE";
+				type="END3";
+			};
+			id=77;
+			type="EmptyDetector";
+			atlOffset=35.732246;
+		};
+		class Item4
+		{
+			dataType="Trigger";
+			position[]={944.50928,2.8666589,6845.1978};
+			class Attributes
+			{
+				text="null";
+				sizeA=0;
+				sizeB=0;
+				activationBy="DELTA";
+				type="END4";
+			};
+			id=78;
+			type="EmptyDetector";
+			atlOffset=35.972576;
+		};
+		class Item5
+		{
+			dataType="Trigger";
+			position[]={953.3042,2.8666589,6833.2686};
+			class Attributes
+			{
+				text="null";
+				sizeA=0;
+				sizeB=0;
+				activationBy="ECHO";
+				type="END5";
+			};
+			id=79;
+			type="EmptyDetector";
+			atlOffset=36.431347;
+		};
+		class Item6
+		{
+			dataType="Trigger";
+			position[]={960.35498,2.8666589,6821.0127};
+			class Attributes
+			{
+				text="null";
+				sizeA=0;
+				sizeB=0;
+				activationBy="FOXTROT";
+				type="END6";
+			};
+			id=80;
+			type="EmptyDetector";
+			atlOffset=36.298561;
+		};
+		class Item7
+		{
+			dataType="Trigger";
+			position[]={966.97638,2.8666589,6808.7554};
+			class Attributes
+			{
+				text="null";
+				sizeA=0;
+				sizeB=0;
+				activationBy="GOLF";
+				type="LOOSE";
+			};
+			id=81;
+			type="EmptyDetector";
+			atlOffset=36.1791;
+		};
+		class Item8
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={546.00928,7.4514389,6754.457};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=1;
+						rank="CAPTAIN";
+						init="seals1=group this; seals1 setBehaviour ""SAFE"";";
+						name="seal1";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=83;
+					type="VTE_sealtl";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={551.00928,7.450429,6749.5068};
+						angles[]={-0,0,6.2822089};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="LIEUTENANT";
+						name="seal4";
+					};
+					id=84;
+					type="VTE_sealrto";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={541.00928,7.4508953,6749.5068};
+						angles[]={6.2822089,0,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="SERGEANT";
+						name="seal3";
+					};
+					id=85;
+					type="VTE_sealmg";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={556.00928,7.4454293,6744.5068};
+						angles[]={-0,0,6.2822089};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="SERGEANT";
+						name="seal2";
+					};
+					id=86;
+					type="VTE_seal";
+					atlOffset=-4.7683716e-007;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={536.00928,7.4458961,6744.5068};
+						angles[]={6.2822089,0,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="SERGEANT";
+						name="seal5";
+					};
+					id=87;
+					type="VTE_sealmedic";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={561.00928,7.4404297,6739.5068};
+						angles[]={-0,0,6.2822089};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+						rank="SERGEANT";
+						name="seal6";
+					};
+					id=88;
+					type="VTE_sealgl";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=82;
+			atlOffset=55.549999;
+		};
+	};
+};
+class OutroLoose
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
