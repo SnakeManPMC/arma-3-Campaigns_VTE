@@ -25,7 +25,7 @@ class Campaign
 	firstBattle = PMC_ia_drang;
 	disableMP = 1;
 
-	briefingName = "VTE SOG Real War v0.0.1";
+	briefingName = "VTE SOG Real War v0.0.2";
 	author = "Snake Man, PMC.";
 	overviewPicture = "";
 	overviewText = "SOG battles North Vietnamese Army and Viet Cong in jungles of Vietnam.";
@@ -46,43 +46,43 @@ class Campaign
 
 		class pmc_m01: MissionDefault
 		{
-			end1 = pmc_m02;
+			pmc_end1 = pmc_m02;
 			template = vte_sog_realwar_1.vte_ia_drang;
 		};
 
 		class pmc_m02: MissionDefault
 		{
-			end1 = pmc_m03;
+			pmc_end1 = pmc_m03;
 			template = vte_sog_realwar_2.vte_ia_drang;
 		};
 
 		class pmc_m03: MissionDefault
 		{
-			end1 = pmc_m04;
+			pmc_end1 = pmc_m04;
 			template = vte_sog_realwar_3.vte_ia_drang;
 		};
 
 		class pmc_m04: MissionDefault
 		{
-			end1 = pmc_m05;
+			pmc_end1 = pmc_m05;
 			template = vte_sog_realwar_4.vte_ia_drang;
 		};
 
 		class pmc_m05: MissionDefault
 		{
-			end1 = pmc_m06;
+			pmc_end1 = pmc_m06;
 			template = vte_sog_realwar_5.vte_ia_drang;
 		};
 
 		class pmc_m06: MissionDefault
 		{
-			end1 = pmc_m07;
+			pmc_end1 = pmc_m07;
 			template = vte_sog_realwar_6.vte_ia_drang;
 		};
 
 		class pmc_m07: MissionDefault
 		{
-			end1 = ;
+			pmc_end1 = ;
 			template = vte_sog_realwar_7.vte_ia_drang;
 		};
 /*
