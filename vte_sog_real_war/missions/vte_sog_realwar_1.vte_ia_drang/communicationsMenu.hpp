@@ -14,11 +14,36 @@ bis example
 		removeAfterExpressionCall = 0; // 1 to remove the item after calling
 	};
 */	
+	// pmctodo remove debug before release
 	class PMC_debug_onoff
 	{
 		text = "PMC_debug on/off";
 		submenu = "";
 		expression = "if (PMC_debug) then { PMC_debug = false; hint 'Debug is now OFF'; } else { PMC_debug = true; hint 'Debug is now ON'; };";
+		icon = "";
+		cursor = "";
+		enable = "1";
+		removeAfterExpressionCall = 0;
+	};
+
+	// PMC manual helicopter transport script
+	class PMC_Helo_Transport
+	{
+		text = "Helicopter Transport";
+		submenu = "";
+		expression = "_this execVM 'PMC\PMC_Helo_Transport_Comms_Menu.sqf';";
+		icon = "";
+		cursor = "";
+		enable = "1";
+		removeAfterExpressionCall = 0;
+	};
+
+	// pmctodo remove debug end mission cheat before release
+	class PMC_endMission_Debug
+	{
+		text = "Debug: End Mission";
+		submenu = "";
+		expression = "'pmc_end1' call BIS_fnc_endMission;";
 		icon = "";
 		cursor = "";
 		enable = "1";

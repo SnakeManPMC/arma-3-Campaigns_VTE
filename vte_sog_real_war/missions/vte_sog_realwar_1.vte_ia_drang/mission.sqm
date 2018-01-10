@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=146;
+		nextID=151;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11687.281,80.550003,7911.3569};
-		dir[]={-0.8336935,-0.46224394,-0.30215991};
-		up[]={-0.43458697,0.8867504,-0.15750946};
-		aside[]={-0.34074742,-2.5599002e-007,0.94016188};
+		pos[]={11689.382,87.617172,9488.6016};
+		dir[]={0.14979395,-0.39451438,0.9065997};
+		up[]={0.064312205,0.91889095,0.38923749};
+		aside[]={0.98662579,3.8064172e-008,-0.16301633};
 	};
 };
 binarizationWanted=0;
@@ -33,13 +33,14 @@ addons[]=
 	"A3_Modules_F",
 	"vte_weapons_cfg",
 	"A3_Modules_F_Supports",
-	"vte_arty_cfg"
+	"vte_arty_cfg",
+	"vte_air_cfg"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			className="vte_chara_cfg";
@@ -61,6 +62,11 @@ class AddonsMetaData
 		{
 			className="vte_arty_cfg";
 			name="vte_arty_cfg";
+		};
+		class Item4
+		{
+			className="vte_air_cfg";
+			name="vte_air_cfg";
 		};
 	};
 };
@@ -113,7 +119,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=36;
+		items=38;
 		class Item0
 		{
 			dataType="Trigger";
@@ -1310,7 +1316,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11645.169,55.551437,7898.6138};
+						position[]={11687.309,77.801437,9534.2764};
 					};
 					side="West";
 					flags=6;
@@ -1325,7 +1331,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11635.91,55.551437,7898.3394};
+						position[]={11678.05,77.801437,9534.002};
 					};
 					side="West";
 					flags=4;
@@ -1340,7 +1346,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11656.966,55.551437,7898.4399};
+						position[]={11699.105,77.801437,9534.1025};
 					};
 					side="West";
 					flags=4;
@@ -1355,7 +1361,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11665.367,55.551437,7897.9854};
+						position[]={11707.507,77.801437,9533.6484};
 					};
 					side="West";
 					flags=4;
@@ -1431,7 +1437,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11645.169,56.285187,7898.564};
+				position[]={11687.309,78.535187,9534.2266};
 			};
 			side="West";
 			flags=6;
@@ -1446,7 +1452,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11656.966,56.285187,7898.3901};
+				position[]={11699.105,78.535187,9534.0527};
 			};
 			side="West";
 			flags=4;
@@ -1461,7 +1467,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11635.91,56.285187,7898.2896};
+				position[]={11678.05,78.535187,9533.9521};
 			};
 			side="West";
 			flags=4;
@@ -1476,7 +1482,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11665.367,56.285187,7897.9355};
+				position[]={11707.507,78.535187,9533.5986};
 			};
 			side="West";
 			flags=4;
@@ -1491,10 +1497,129 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11657.011,55.549999,7906.5176};
+				position[]={11699.15,77.800003,9542.1807};
 			};
 			id=145;
 			type="SupportProvider_Artillery";
+		};
+		class Item36
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12023.884,55.551437,7879.9688};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="pmc_huey1D";
+					};
+					id=148;
+					type="VTE_acpilot";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12023.884,55.551437,7879.9688};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="pmc_huey1G";
+					};
+					id=149;
+					type="VTE_acpilot";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12023.884,55.551437,7879.9688};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=150;
+					type="VTE_acpilot";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=3;
+				};
+				class Links
+				{
+					items=3;
+					class Item0
+					{
+						linkID=0;
+						item0=148;
+						item1=147;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=149;
+						item1=147;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=150;
+						item1=147;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={1};
+						};
+					};
+				};
+			};
+			id=146;
+		};
+		class Item37
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12023.884,57.871025,7879.9189};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				name="pmc_huey1";
+			};
+			id=147;
+			type="vte_uh1a";
 		};
 	};
 	class Connections

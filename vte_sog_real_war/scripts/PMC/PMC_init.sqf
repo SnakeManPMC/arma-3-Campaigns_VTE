@@ -90,6 +90,8 @@ PMC_Objective_4 = false;
 // don't show notification
 //0 = [player, "PMC_ArtilleryCall", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 0 = [player, "PMC_debug_onoff", nil, nil, ""] call BIS_fnc_addCommMenuItem;
+0 = [player, "PMC_Helo_Transport", nil, nil, ""] call BIS_fnc_addCommMenuItem;
+0 = [player, "PMC_endMission_Debug", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 
 // random call sign for player
 [group player] call PMC_Radio_Callsign_Random;
@@ -97,3 +99,6 @@ PMC_Objective_4 = false;
 PMCHQ = [ West, "HQ" ];
 
 [pmc_1] execVM "PMC\PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf";
+
+// custom radio call sign for transport huey
+[group pmc_huey1] call PMC_Radio_Callsign_Random;
