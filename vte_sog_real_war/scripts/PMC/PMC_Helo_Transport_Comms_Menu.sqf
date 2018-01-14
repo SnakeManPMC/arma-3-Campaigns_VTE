@@ -24,7 +24,7 @@ _lg sidechat "On my way.";
 waitUntil
 {
 	sleep 2;
-	( ( (unitReady _vcl) || !(canMove _vcl) );
+	((unitReady _vcl) || !(canMove _vcl));
 };
 
 _lg sidechat "Arrived. Get ready boys.";
@@ -33,7 +33,7 @@ _lg sidechat "Arrived. Get ready boys.";
 _vcl land "land";
 
 // bit sleep to give helo time to land
-sleep 120;
+sleep 240;
 
 // cleanup
 deleteVehicle _lpad;

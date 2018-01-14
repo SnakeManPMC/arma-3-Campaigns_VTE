@@ -25,7 +25,7 @@ class Campaign
 	firstBattle = PMC_ia_drang;
 	disableMP = 1;
 
-	briefingName = "VTE SOG Real War v0.0.3";
+	briefingName = "VTE SOG Real War v0.0.4";
 	author = "Snake Man, PMC.";
 	overviewPicture = "";
 	overviewText = "SOG battles North Vietnamese Army and Viet Cong in jungles of Vietnam.";
