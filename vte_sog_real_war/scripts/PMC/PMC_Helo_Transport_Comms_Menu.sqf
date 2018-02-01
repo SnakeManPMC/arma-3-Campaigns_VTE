@@ -12,7 +12,7 @@ Communications Menu called helicopter transport script
 private _position = _this select 1;
 //player sidechat format["_position: %1", _position];
 // land_vte_bis_heli_h
-private _lpad = "land_helipadempty_f" createVehicle _position;
+private _lpad = "Land_VTE_bis_Heli_H" createVehicle _position;
 private _lg = leader group pmc_huey1;
 private _vcl = pmc_huey1;
 
