@@ -202,7 +202,7 @@ class Mission
 			{
 				text="hq reply 1";
 				condition="DoneObj1";
-				onActivation="PAPABEAR sideRadio ""Rmcomplete""; PMC_objective1 setTaskState ""SUCCEEDED""; ""target1"" setMarkerColor ""colorgreen""; ""target1"" setMarkerType ""dot"";";
+				onActivation="PAPABEAR sideRadio ""Rmcomplete""; PMC_objective1 setTaskState ""SUCCEEDED""; ""target1"" setMarkerColor ""colorgreen""; ""target1"" setMarkerType ""mil_dot"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={0,15,25};
