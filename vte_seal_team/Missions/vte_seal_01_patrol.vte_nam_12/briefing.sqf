@@ -82,4 +82,4 @@ switch (side player) do
 	};
 };
 
-//<p><a name = "OBJ_1'></marker>Patrol target 1
+//<a name = "OBJ_1'></marker>Patrol target 1

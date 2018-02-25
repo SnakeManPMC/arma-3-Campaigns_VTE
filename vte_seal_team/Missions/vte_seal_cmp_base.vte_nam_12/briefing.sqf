@@ -77,4 +77,4 @@ switch (side player) do
 	{
 	};
 };
-//<p><a name = "OBJ_1'></marker>Target 1
+//<a name = "OBJ_1'></marker>Target 1

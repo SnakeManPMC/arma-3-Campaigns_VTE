@@ -81,4 +81,4 @@ switch (side player) do
 	{
 	};
 };
-//<p><a name = "OBJ_1'></marker>Recover target 1
+//<a name = "OBJ_1'></marker>Recover target 1
