@@ -154,7 +154,7 @@ class Intro
 					class Attributes
 					{
 						skill=0.35869306;
-						init="this setunitpos ""middle""; this exec ""intro.sqs""";
+						init="this setunitpos ""middle""; this execVM ""intro.sqf""";
 						isPlayer=1;
 						isPlayable=1;
 					};

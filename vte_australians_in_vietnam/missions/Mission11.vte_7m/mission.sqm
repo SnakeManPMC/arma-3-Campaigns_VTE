@@ -249,7 +249,7 @@ class Intro
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallweapons this; this addweapon ""VTE_SKS""; this exec ""intro.sqs""";
+						init="removeallweapons this; this addweapon ""VTE_SKS""; this execVM ""intro.sqf""";
 						isPlayer=1;
 						isPlayable=1;
 					};

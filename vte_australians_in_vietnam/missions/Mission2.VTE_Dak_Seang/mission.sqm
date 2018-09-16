@@ -183,7 +183,7 @@ class Intro
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this exec ""intro.sqs""";
+						init="this execVM ""intro.sqf""";
 					};
 					id=385;
 					type="VTE_Armyofficer";

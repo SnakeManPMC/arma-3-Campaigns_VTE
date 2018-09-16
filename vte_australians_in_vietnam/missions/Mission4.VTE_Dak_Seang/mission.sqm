@@ -154,7 +154,7 @@ class Intro
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this dowatch a;this exec ""intro.sqs""";
+						init="this dowatch a;this execVM ""intro.sqf""";
 						name="u1";
 					};
 					id=563;

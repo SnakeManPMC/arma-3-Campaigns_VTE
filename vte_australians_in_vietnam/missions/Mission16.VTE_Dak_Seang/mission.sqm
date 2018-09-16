@@ -503,7 +503,7 @@ class Intro
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this exec ""intro.sqs""";
+						init="this execVM ""intro.sqf""";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -5745,7 +5745,7 @@ class OutroWin
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="this exec ""outro.sqs""";
+						init="this execVM ""outro.sqf""";
 					};
 					id=323;
 					type="VTE_villager1";

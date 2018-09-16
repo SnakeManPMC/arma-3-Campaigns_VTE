@@ -110,7 +110,7 @@ class Intro
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="this exec ""intro.sqs""";
+						init="this execVM ""intro.sqf""";
 						isPlayer=1;
 						isPlayable=1;
 					};

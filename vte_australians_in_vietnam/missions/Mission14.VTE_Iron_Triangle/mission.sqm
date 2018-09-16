@@ -326,7 +326,7 @@ class Intro
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this exec ""intro.sqs""";
+						init="this execVM ""intro.sqf""";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -360,7 +360,7 @@ class Intro
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this exec ""intro.sqs""";
+						init="this execVM ""intro.sqf""";
 					};
 					id=147;
 					type="VTE_Armyofficer";
@@ -1643,7 +1643,7 @@ class OutroWin
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; this setIdentity ""a""; this exec ""outro.sqs""; this switchmove ""RepairingKneel""";
+						init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; this setIdentity ""a""; this execVM ""outro.sqf""; this switchmove ""RepairingKneel""";
 						name="a_1";
 						isPlayer=1;
 						isPlayable=1;

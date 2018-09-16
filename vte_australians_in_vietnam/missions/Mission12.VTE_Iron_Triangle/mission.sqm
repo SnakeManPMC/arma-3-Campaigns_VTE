@@ -222,7 +222,7 @@ class Intro
 					{
 						skill=0.60000002;
 						ammo=0;
-						init="this exec ""intro.sqs""";
+						init="this execVM ""intro.sqf""";
 						isPlayer=1;
 						isPlayable=1;
 					};

@@ -115,7 +115,7 @@ class Intro
 					class Attributes
 					{
 						skill=0.43540239;
-						init="this exec ""intro.sqs""";
+						init="this execVM ""intro.sqf""";
 						isPlayer=1;
 						isPlayable=1;
 					};
