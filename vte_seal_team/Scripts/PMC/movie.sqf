@@ -4,7 +4,7 @@ _camera camSetTarget [0,0,0];
 _camera cameraEffect ["internal","back"];
 _camera camSetFOV 0.700;
 
-playmusic ["track1",0];
+[] execVM "PMC\PMC_Music_Jukebox_ArmA3_Default_Tracks.sqf";
 
 titlecut ["","BLACK IN",2];
 sleep 5;
