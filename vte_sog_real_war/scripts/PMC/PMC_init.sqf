@@ -2,6 +2,7 @@
 PMCHQ = [ West, "HQ" ];
 
 [1.1] execVM "PMC\PMC_weather_sp.sqf";
+[] execVM "PMC\PMC_Briefing.sqf";
 
 // debug on
 PMC_debug = false;

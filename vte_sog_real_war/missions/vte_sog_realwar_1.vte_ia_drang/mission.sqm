@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=151;
+		nextID=153;
 	};
 	class MarkerIDProvider
 	{
-		nextID=3;
+		nextID=4;
 	};
 	class LayerIndexProvider
 	{
@@ -34,13 +34,14 @@ addons[]=
 	"vte_weapons_cfg",
 	"A3_Modules_F_Supports",
 	"vte_arty_cfg",
-	"vte_air_cfg"
+	"vte_air_cfg",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			className="vte_chara_cfg";
@@ -67,6 +68,13 @@ class AddonsMetaData
 		{
 			className="vte_air_cfg";
 			name="vte_air_cfg";
+		};
+		class Item5
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -119,7 +127,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=38;
+		items=40;
 		class Item0
 		{
 			dataType="Trigger";
@@ -1325,6 +1333,7 @@ class Mission
 					};
 					id=137;
 					type="VTE_Armysoldier";
+					atlOffset=-7.6293945e-006;
 				};
 				class Item1
 				{
@@ -1340,6 +1349,7 @@ class Mission
 					};
 					id=142;
 					type="VTE_Armysoldier";
+					atlOffset=-7.6293945e-006;
 				};
 				class Item2
 				{
@@ -1355,6 +1365,7 @@ class Mission
 					};
 					id=140;
 					type="VTE_Armysoldier";
+					atlOffset=-7.6293945e-006;
 				};
 				class Item3
 				{
@@ -1370,6 +1381,7 @@ class Mission
 					};
 					id=144;
 					type="VTE_Armysoldier";
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
@@ -1431,6 +1443,7 @@ class Mission
 				};
 			};
 			id=135;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item31
 		{
@@ -1446,6 +1459,7 @@ class Mission
 			};
 			id=136;
 			type="VTE_81mm_mortar";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item32
 		{
@@ -1461,6 +1475,7 @@ class Mission
 			};
 			id=139;
 			type="VTE_81mm_mortar";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item33
 		{
@@ -1476,6 +1491,7 @@ class Mission
 			};
 			id=141;
 			type="VTE_81mm_mortar";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item34
 		{
@@ -1491,6 +1507,7 @@ class Mission
 			};
 			id=143;
 			type="VTE_81mm_mortar";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item35
 		{
@@ -1620,6 +1637,26 @@ class Mission
 			};
 			id=147;
 			type="vte_uh1a";
+		};
+		class Item38
+		{
+			dataType="Marker";
+			position[]={11657.358,55.549999,7887.3232};
+			name="pmc_marker_plei_me";
+			text="Ammo";
+			type="mil_box";
+			colorName="ColorKhaki";
+			id=151;
+		};
+		class Item39
+		{
+			dataType="Marker";
+			position[]={11727.851,77.800003,9538.4072};
+			name="pmc_marker_fb_falcon";
+			text="Ammo";
+			type="mil_box";
+			colorName="ColorKhaki";
+			id=152;
 		};
 	};
 	class Connections

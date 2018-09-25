@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=150;
+		nextID=152;
 	};
 	class MarkerIDProvider
 	{
@@ -34,13 +34,14 @@ addons[]=
 	"vte_weapons_cfg",
 	"A3_Modules_F_Supports",
 	"vte_arty_cfg",
-	"vte_air_cfg"
+	"vte_air_cfg",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			className="vte_chara_cfg";
@@ -67,6 +68,13 @@ class AddonsMetaData
 		{
 			className="vte_air_cfg";
 			name="vte_air_cfg";
+		};
+		class Item5
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -119,7 +127,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=38;
+		items=40;
 		class Item0
 		{
 			dataType="Trigger";
@@ -1751,6 +1759,26 @@ class Mission
 			};
 			id=149;
 			type="vte_uh1a";
+		};
+		class Item38
+		{
+			dataType="Marker";
+			position[]={11727.851,77.800003,9538.4072};
+			name="pmc_marker_fb_falcon";
+			text="Ammo";
+			type="mil_box";
+			colorName="ColorKhaki";
+			id=150;
+		};
+		class Item39
+		{
+			dataType="Marker";
+			position[]={11657.358,55.549999,7887.3232};
+			name="pmc_marker_plei_me";
+			text="Ammo";
+			type="mil_box";
+			colorName="ColorKhaki";
+			id=151;
 		};
 	};
 	class Connections
