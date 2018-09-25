@@ -13,7 +13,8 @@ sleep 10;
 	[
 		"You must capture and hold all objectives to finish your mission. Do not let any gooks get into the objectives!",
 		"Capture All Objectives",
-		""],
+		""
+	],
 	"",
 	1,
 	2,
@@ -26,7 +27,7 @@ while { !(PMC_Objective_0 && PMC_Objective_1 && PMC_Objective_2 && PMC_Objective
 	sleep 10;
 	if (pmc_debug) then
 	{
-		hint format["Objectives met true/false:\n\nPMC_Objective_0: %1\nPMC_Objective_1: %2\nPMC_Objective_2: %3\nPMC_Objective_3: %4\nPMC_Objective_4: %5", PMC_Objective_0, PMC_Objective_1, PMC_Objective_2, PMC_Objective_3, PMC_Objective_4];
+		hintSilent format["Objectives met true/false:\n\nPMC_Objective_0: %1\nPMC_Objective_1: %2\nPMC_Objective_2: %3\nPMC_Objective_3: %4\nPMC_Objective_4: %5", PMC_Objective_0, PMC_Objective_1, PMC_Objective_2, PMC_Objective_3, PMC_Objective_4];
 	};
 };
 

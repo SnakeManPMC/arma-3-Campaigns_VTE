@@ -1,11 +1,7 @@
 
-private
-[
-	"_tmp"
-];
+PMCHQ = [ West, "HQ" ];
 
-//[] execVM "PMC\PMC_weather.sqf";
-[] execVM "PMC\real_weather.sqf";
+[1.1] execVM "PMC\PMC_weather_sp.sqf";
 
 // debug on
 PMC_debug = false;
@@ -49,7 +45,7 @@ PMC_corpses = [];
 [75] execVM "PMC\PMC_corpses.sqf";
 
 // fill the PMC_targets array.
-_tmp = [] execVM "PMC\PMC_targets.sqf";
+private _tmp = [] execVM "PMC\PMC_targets.sqf";
 waitUntil
 {
 	scriptDone _tmp;
@@ -88,15 +84,13 @@ PMC_Objective_4 = false;
 // add communications menu for player
 //_supportHeli = [player,"Support_Request_CAS_Heli"] call BIS_fnc_addCommMenuItem;
 // don't show notification
-//0 = [player, "PMC_ArtilleryCall", nil, nil, ""] call BIS_fnc_addCommMenuItem;
-0 = [player, "PMC_debug_onoff", nil, nil, ""] call BIS_fnc_addCommMenuItem;
-0 = [player, "PMC_Helo_Transport", nil, nil, ""] call BIS_fnc_addCommMenuItem;
-0 = [player, "PMC_endMission_Debug", nil, nil, ""] call BIS_fnc_addCommMenuItem;
+//[player, "PMC_ArtilleryCall", nil, nil, ""] call BIS_fnc_addCommMenuItem;
+[player, "PMC_debug_onoff", nil, nil, ""] call BIS_fnc_addCommMenuItem;
+[player, "PMC_Helo_Transport", nil, nil, ""] call BIS_fnc_addCommMenuItem;
+[player, "PMC_endMission_Debug", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 
 // random call sign for player
 [group player] call PMC_Radio_Callsign_Random;
-
-PMCHQ = [ West, "HQ" ];
 
 [pmc_1] execVM "PMC\PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf";
 
