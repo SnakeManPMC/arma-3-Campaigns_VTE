@@ -1,5 +1,6 @@
+
 author = "Snake Man, PMC.";
-overviewText = "Studies and Observations Group";
+overviewText = "SOG Mission 6";
 overviewPicture = "";
 onLoadMission = "Studies and Observations Group";
 // shown at mission load even though real mission name is something else.
