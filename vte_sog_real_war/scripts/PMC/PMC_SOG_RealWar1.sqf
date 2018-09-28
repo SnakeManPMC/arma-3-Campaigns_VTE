@@ -23,8 +23,8 @@ _PMC_temptargets = [];
 _PMC_temptargets = PMC_targets;
 _waypointRanPosit = 50;
 // force levels, handicap because humans are so elite we dont need many BLUFOR.
-_MaxOPFOR = 200;
-_MaxBLUFOR = 75;
+_MaxOPFOR = 100;
+_MaxBLUFOR = 35;
 
 // send editor groups
 [usinf1] execVM "PMC\PMC_Send_Editor_Groups.sqf";
