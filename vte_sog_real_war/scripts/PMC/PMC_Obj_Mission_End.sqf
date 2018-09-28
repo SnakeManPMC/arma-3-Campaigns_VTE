@@ -25,10 +25,6 @@ sleep 10;
 while { !(PMC_Objective_0 && PMC_Objective_1 && PMC_Objective_2 && PMC_Objective_3 && PMC_Objective_4) } do
 {
 	sleep 10;
-	if (pmc_debug) then
-	{
-		hintSilent format["Objectives met true/false:\n\nPMC_Objective_0: %1\nPMC_Objective_1: %2\nPMC_Objective_2: %3\nPMC_Objective_3: %4\nPMC_Objective_4: %5", PMC_Objective_0, PMC_Objective_1, PMC_Objective_2, PMC_Objective_3, PMC_Objective_4];
-	};
 };
 
 hint "Objectives are met! Mission accomplished!";
