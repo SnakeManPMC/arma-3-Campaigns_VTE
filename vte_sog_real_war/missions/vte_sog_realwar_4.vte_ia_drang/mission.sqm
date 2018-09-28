@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7910.8535,94.305222,6685.5811};
-		dir[]={-0.88120574,-0.17481135,-0.43924332};
-		up[]={-0.1564569,0.98459935,-0.077987};
-		aside[]={-0.44611222,6.1932951e-008,0.89498484};
+		pos[]={11461.373,38.349998,3661.5295};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -877,7 +877,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6091.0688,16.180529,4266.4961};
+				position[]={6094.1196,16.321098,4267.9399};
 				angles[]={6.2113094,0,0.012000273};
 			};
 			name="PMC_opfor_start_1";
@@ -983,7 +983,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11574.738,13.028402,3467.0273};
-				angles[]={0,0,6.2701883};
+				angles[]={-0,0,6.2701883};
 			};
 			id=131;
 			type="SupportProvider_Virtual_CAS_Bombing";
@@ -1515,11 +1515,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7888.9448,88.664268,6682.813};
+				position[]={7888.9448,88.606293,6682.813};
+				angles[]={6.2731848,0,0.10560594};
 			};
 			id=144;
 			type="SupportProvider_Artillery";
-			atlOffset=0.057975769;
 		};
 		class Item36
 		{

@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1165.7671,28.236225,584.12097};
-		dir[]={0.29621634,-0.31422073,0.90195799};
-		up[]={0.09804365,0.94934756,0.29853582};
-		aside[]={0.95007849,6.4523192e-008,-0.31202027};
+		pos[]={11482.844,38.349998,3670.6345};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -882,7 +882,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2604.491,26.307825,3642.3271};
+				position[]={2604.157,25.837864,3638.1191};
 				angles[]={6.1914439,0,0.24309553};
 			};
 			name="PMC_opfor_start_1";
@@ -906,7 +906,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2565.5945,71.888565,7463.9648};
+				position[]={2564.333,73.072784,7459.3667};
 				angles[]={0.29603747,0,0.1713044};
 			};
 			name="PMC_opfor_start_3";
@@ -975,8 +975,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5491.0679,5.5132136,10605.733};
-				angles[]={6.2812018,0,0.010999938};
+				position[]={5495.1108,5.5031514,10610.174};
+				angles[]={0.010000871,0,6.2822089};
 			};
 			name="PMC_5";
 			id=123;
@@ -987,12 +987,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11578.562,12.949584,3472.4785};
+				position[]={11578.562,12.949585,3472.4785};
 				angles[]={0.027993103,0,6.2422075};
 			};
 			id=131;
 			type="SupportProvider_Virtual_CAS_Bombing";
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0

@@ -39,26 +39,27 @@ _PMC_CreateTriggers =
 
 	[west, [_m], ["Capture this objective.", _m, _markerobj], _targetpoint, 1, 2, true] call BIS_fnc_taskCreate;
 
+	private _pmcCond = "this and 'Land' counttype thisList > 0";
 	// BLUFOR
 	_z = createTrigger ["EmptyDetector", _targetpoint];
 	_z setTriggerActivation ["WEST SEIZED", "PRESENT", true];
 	_z setTriggerArea [_triggerArea, _triggerArea, 0, true];
 	_z setTriggerTimeout [0, (_triggerTimeout/2), _triggerTimeout, true];
-	_z setTriggerStatements ["this", format ["0 = ['PMC_Objective_%1', 'blufor'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
+	_z setTriggerStatements [_pmcCond, format ["0 = ['PMC_Objective_%1', 'blufor'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
 
 	// OPFOR
 	_z = createTrigger ["EmptyDetector", _targetpoint];
 	_z setTriggerActivation ["EAST SEIZED", "PRESENT", true];
 	_z setTriggerArea [_triggerArea, _triggerArea, 0, true];
 	_z setTriggerTimeout [0, (_triggerTimeout/2), _triggerTimeout, true];
-	_z setTriggerStatements ["this", format ["0 = ['PMC_Objective_%1', 'opfor'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
+	_z setTriggerStatements [_pmcCond, format ["0 = ['PMC_Objective_%1', 'opfor'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
 
 	// Guerrilla
 	_z = createTrigger ["EmptyDetector", _targetpoint];
 	_z setTriggerActivation ["GUER SEIZED", "PRESENT", true];
 	_z setTriggerArea [_triggerArea, _triggerArea, 0, true];
 	_z setTriggerTimeout [0, (_triggerTimeout/2), _triggerTimeout, true];
-	_z setTriggerStatements ["this", format ["0 = ['PMC_Objective_%1', 'guer'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
+	_z setTriggerStatements [_pmcCond, format ["0 = ['PMC_Objective_%1', 'guer'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
 };
 
 // create objectives
