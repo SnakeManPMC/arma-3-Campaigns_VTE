@@ -1,9 +1,10 @@
 
+private _pos = _this select 0;
 private _grp = createGroup west;
 waitUntil {!(isNull _grp)};
 
-"VTE_soldierwmedic" createUnit [_respawnpoint, _grp, "", 1, "SERGEANT"];
-"VTE_soldierwmedic" createUnit [_respawnpoint, _grp, "", 1, "CORPORAL"];
+"VTE_soldierwmedic" createUnit [_pos, _grp, "", 1, "SERGEANT"];
+"VTE_soldierwmedic" createUnit [_pos, _grp, "", 1, "CORPORAL"];
 
 [_grp] call PMC_Radio_Callsign_Random;
 
@@ -18,7 +19,7 @@ _grp setcombatmode "YELLOW";
 _grp setspeedmode "FULL";
 _grp setformation "LINE";
 
-_grp addWaypoint [(_this select 0), 0];
+_grp addWaypoint [_pos, 0];
 [_grp, 1] setWaypointBehaviour "AWARE";
 [_grp, 1] setWaypointCombatMode "GREEN";
 [_grp, 1] setWaypointSpeed "FULL";
