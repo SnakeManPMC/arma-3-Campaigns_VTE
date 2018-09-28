@@ -41,6 +41,10 @@ call compile preprocessFileLineNumbers "PMC\PMC_Create_Inf_Guard_US_LRRP_heavy.s
 //call compile preprocessFileLineNumbers "PMC\PMC_SOG_RealWar_Create_Marker.sqf";
 call compile preprocessFileLineNumbers "PMC\PMC_Radio_Callsign_Random.sqf";
 
+// special support groups, medics on support waypoint
+[getPos PMC_blufor_start_1] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
+[getPos PMC_blufor_start_2] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
+
 // corpse removal
 PMC_killedNum = 0;
 publicVariable "PMC\PMC_killedNum";
