@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=152;
+		nextID=158;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11457.482,38.349998,3637.8518};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,0};
+		pos[]={11640.926,80.550003,7867.0547};
+		dir[]={0.21309631,-0.52450824,0.82430941};
+		up[]={0.13127787,0.85140449,0.50781512};
+		aside[]={0.96817368,-2.7022907e-008,-0.25028765};
 	};
 };
 binarizationWanted=0;
@@ -35,13 +35,15 @@ addons[]=
 	"A3_Modules_F_Supports",
 	"vte_arty_cfg",
 	"vte_air_cfg",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"CUP_Misc_e_Config",
+	"VTE_core_cfg"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=8;
 		class Item0
 		{
 			className="vte_chara_cfg";
@@ -75,6 +77,16 @@ class AddonsMetaData
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="CUP_Misc_e_Config";
+			name="CUP_Misc_e_Config";
+		};
+		class Item7
+		{
+			className="VTE_core_cfg";
+			name="VTE_core_cfg";
 		};
 	};
 };
@@ -121,7 +133,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=40;
+		items=46;
 		class Item0
 		{
 			dataType="Trigger";
@@ -264,6 +276,7 @@ class Mission
 					};
 					id=4;
 					type="VTE_SOGR5";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -425,6 +438,7 @@ class Mission
 					};
 					id=6;
 					type="VTE_SOGR4";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2137,6 +2151,99 @@ class Mission
 			type="mil_box";
 			colorName="ColorKhaki";
 			id=151;
+		};
+		class Item40
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11658.053,56.7295,7896.8223};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=152;
+			type="MASH_EP1";
+		};
+		class Item41
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11717.725,78.979507,9549.2871};
+				angles[]={-0,4.7312446,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=153;
+			type="MASH_EP1";
+		};
+		class Item42
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11640.913,59.526802,7913.7109};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=154;
+			type="VTE_flagcarrier_arvn";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item43
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11712.064,81.77681,9540.4707};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=155;
+			type="VTE_flagcarrier_arvn";
+		};
+		class Item44
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11632.844,59.526802,7913.0088};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=156;
+			type="vte_flagcarrier_usa";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item45
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11703.995,81.77681,9539.7686};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=157;
+			type="vte_flagcarrier_usa";
 		};
 	};
 	class Connections
