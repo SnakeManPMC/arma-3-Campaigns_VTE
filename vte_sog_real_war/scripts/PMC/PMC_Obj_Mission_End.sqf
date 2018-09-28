@@ -35,5 +35,6 @@ hint "Objectives are met! Mission accomplished!";
 player sidechat "Yeah baby! Objectives are met!";
 
 // end mission!
+[] execVM "PMC\PMC_SaveStatus.sqf";
 sleep 10;
 "pmc_end1" call BIS_fnc_endMission;

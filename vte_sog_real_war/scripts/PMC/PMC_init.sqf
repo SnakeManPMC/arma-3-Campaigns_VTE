@@ -1,4 +1,6 @@
 
+[] execVM "PMC\PMC_LoadStatus.sqf";
+
 PMCHQ = [ West, "HQ" ];
 
 [1.1] execVM "PMC\PMC_weather_sp.sqf";
