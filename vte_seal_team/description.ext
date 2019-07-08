@@ -181,56 +181,56 @@ class CfgRadio
 	class Rpatrol1
 	{
 		name = "Rpatrol1";
-		sound[] = {"Rpatrol1.ogg", db+0, 1};
+		sound[] = {"", db+0, 1};
 		title = "$STRM_Rpatrol1";
 	};
 
 	class RcallExtract
 	{
 		name = "RcallExtract";
-		sound[] = {"RcallExtract.ogg", db+0, 1};
+		sound[] = {"", db+0, 1};
 		title = "$STRM_RcallExtract";
 	};
 
 	class RextractOnWay
 	{
 		name = "RextractOnWay";
-		sound[] = {"RextractOnWay.ogg", db+0, 1};
+		sound[] = {"", db+0, 1};
 		title = "$STRM_RextractOnWay";
 	};
 
 	class Rmcomplete
 	{
 		name = "Rmcomplete";
-		sound[] = {"Rmcomplete.ogg", db+0, 1};
+		sound[] = {"", db+0, 1};
 		title = "$STRM_Rmcomplete";
 	};
 
 	class Rinsert
 	{
 		name = "Rinsert";
-		sound[] = {"Rinsert.ogg", db+0, 1};
+		sound[] = {"", db+0, 1};
 		title = "$STRM_Rinsert";
 	};
 
 	class Rgoodluck
 	{
 		name = "Rgoodluck";
-		sound[] = {"Rgoodluck.ogg", db+0, 1};
+		sound[] = {"", db+0, 1};
 		title = "$STRM_Rgoodluck";
 	};
 
 	class Rextract
 	{
 		name = "Rextract";
-		sound[] = {"Rextract.ogg", db+0, 1};
+		sound[] = {"", db+0, 1};
 		title = "$STRM_Rextract";
 	};
 
 	class Rdustoff
 	{
 		name = "Rdustoff";
-		sound[] = {"Rdustoff.ogg", db+0, 1};
+		sound[] = {"", db+0, 1};
 		title = "$STRM_Rdustoff";
 	};
 };
