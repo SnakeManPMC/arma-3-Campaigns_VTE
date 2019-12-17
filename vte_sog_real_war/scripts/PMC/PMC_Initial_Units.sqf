@@ -43,7 +43,7 @@ while { (count list PMC_opfor_list < _MaxOPFOR) } do
 
 	if (PMC_debug) then
 	{
-		diag_log "create gooks!"; player sidechat "created gooks!";
+		diag_log "PMC_Initial_Units; create gooks!"; player sidechat "created gooks!";
 	};
 };
 

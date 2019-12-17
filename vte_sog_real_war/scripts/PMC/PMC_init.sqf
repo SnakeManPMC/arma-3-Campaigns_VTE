@@ -60,12 +60,12 @@ waitUntil
 
 if (PMC_debug) then
 {
-	diag_log format["PMC_targets select 0: %1", PMC_targets select 0];
-	diag_log format["PMC_targets select 1: %1", PMC_targets select 1];
-	diag_log format["PMC_targets select 2: %1", PMC_targets select 2];
-	diag_log format["PMC_targets select 3: %1", PMC_targets select 3];
-	diag_log format["PMC_targets select 4: %1", PMC_targets select 4];
-	diag_log format["PMC_targets select 5: %1", PMC_targets select 5];
+	diag_log format["PMC_init; PMC_targets select 0: %1", PMC_targets select 0];
+	diag_log format["PMC_init; PMC_targets select 1: %1", PMC_targets select 1];
+	diag_log format["PMC_init; PMC_targets select 2: %1", PMC_targets select 2];
+	diag_log format["PMC_init; PMC_targets select 3: %1", PMC_targets select 3];
+	diag_log format["PMC_init; PMC_targets select 4: %1", PMC_targets select 4];
+	diag_log format["PMC_init; PMC_targets select 5: %1", PMC_targets select 5];
 	player sidechat format["count PMC_targets: %1", (count PMC_targets)];
 };
 // populate the landscape with small enemy groups

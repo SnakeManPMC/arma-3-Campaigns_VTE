@@ -27,7 +27,7 @@ if (_side == "blufor") then
 	call compile format ["%1 = true;", _objnum];
 	if (pmc_debug) then
 	{
-		diag_log format["blufor set global variable to: %1", format["%1", _objnum] ];
+		diag_log format["PMC_Obj_TriggerActivated; blufor set global variable to: %1", format["%1", _objnum] ];
 		player sidechat format["blufor set global variable to: %1", format["%1", _objnum] ];
 	};
 };
@@ -42,7 +42,7 @@ if (_side == "opfor") then
 	call compile format ["%1 = false;", _objnum];
 	if (pmc_debug) then
 	{
-		diag_log format["opfor set global variable to: %1", format["%1", _objnum] ];
+		diag_log format["PMC_Obj_TriggerActivated; opfor set global variable to: %1", format["%1", _objnum] ];
 		player sidechat format["opfor set global variable to: %1", format["%1", _objnum] ];
 	};
 };
@@ -57,7 +57,7 @@ if (_side == "guer") then
 	call compile format ["%1 = false;", _objnum];
 	if (pmc_debug) then
 	{
-		diag_log format["guer set global variable to: %1", format["%1", _objnum] ];
+		diag_log format["PMC_Obj_TriggerActivated; guer set global variable to: %1", format["%1", _objnum] ];
 		player sidechat format["guer set global variable to: %1", format["%1", _objnum] ];
 	};
 };

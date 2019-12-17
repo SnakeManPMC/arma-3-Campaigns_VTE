@@ -149,7 +149,7 @@ while {PMC_Aircraft_VTE_BLUFOR_running} do
 	PMC_grp_blufor = PMC_grp_blufor + 1;
 	publicVariable "PMC_grp_blufor";
 
-diag_log format["PMC_Aircraft_VTE_BLUFOR: _vcl: %1, PMC_blufor: %2, PMC_grp_blufor: %3", typeOf _vcl, PMC_blufor, PMC_grp_blufor];
+diag_log format["PMC_Aircraft_VTE_BLUFOR_CUSTOM; _vcl: %1, PMC_blufor: %2, PMC_grp_blufor: %3", typeOf _vcl, PMC_blufor, PMC_grp_blufor];
 
 	// do not attempt to create helos more than once a minute
 	sleep 60;
@@ -169,4 +169,4 @@ diag_log format["PMC_Aircraft_VTE_BLUFOR: _vcl: %1, PMC_blufor: %2, PMC_grp_bluf
 // debug to show this script is running
 PMC_Aircraft_VTE_BLUFOR_running = false;
 publicVariable "PMC_Aircraft_VTE_BLUFOR_running";
-diag_log format["PMC_Aircraft_VTE_BLUFOR.sqf EXITED! _vcl: %1, PMC_blufor: %2, PMC_grp_blufor: %3", typeOf _vcl, PMC_blufor, PMC_grp_blufor];
+diag_log format["PMC_Aircraft_VTE_BLUFOR_CUSTOM; EXITED! _vcl: %1, PMC_blufor: %2, PMC_grp_blufor: %3", typeOf _vcl, PMC_blufor, PMC_grp_blufor];

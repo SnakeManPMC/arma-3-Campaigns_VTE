@@ -78,11 +78,11 @@ while { _a < (count PMC_targets) } do
 
 	if (pmc_debug) then
 	{
-		diag_log format["_a: %1, _targetpoint: %2", _a, _targetpoint];
+		diag_log format["PMC_objectivesALL; _a: %1, _targetpoint: %2", _a, _targetpoint];
 		player sidechat format["_a: %1, _targetpoint: %2", _a, _targetpoint];
 	};
 
 	_a = _a + 1;
 };
 
-if (pmc_debug) then { diag_log format["PMC_objectivesALL created: %1 objectives.", _a]; };
+if (pmc_debug) then { diag_log format["PMC_objectivesALL; created: %1 objectives.", _a]; };
