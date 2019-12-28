@@ -25,7 +25,7 @@ class Campaign
 	firstBattle = PMC_ia_drang;
 	disableMP = 1;
 
-	briefingName = "VTE SOG Real War v0.0.9";
+	briefingName = "VTE SOG Real War v0.1";
 	author = "Snake Man, PMC.";
 	overviewPicture = "";
 	overviewText = "SOG battles North Vietnamese Army and Viet Cong in jungles of Vietnam.";
@@ -101,7 +101,7 @@ class CfgCommunicationMenu
 	// pmctodo remove debug before release
 	class PMC_debug_onoff
 	{
-		text = "PMC Debug";
+		text = "PMC Debug on/off";
 		submenu = "";
 		expression = "_this execVM 'PMC\PMC_Debug.sqf';";
 		icon = "";

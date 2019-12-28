@@ -14,17 +14,26 @@ private
 	"_respawnpoint",
 	"_targetNum",
 	"_tlogic",
-	"_waypointRanPosit"
+	"_waypointRanPosit",
+	"_MaxOPFOR",
+	"_MaxBLUFOR"
 ];
 
 // select target location
 _targetNum = count PMC_targets;
 _PMC_temptargets = [];
 _PMC_temptargets = PMC_targets;
-_waypointRanPosit = 50;
+_waypointRanPosit = 100;
 // force levels, handicap because humans are so elite we dont need many BLUFOR.
 _MaxOPFOR = 80;
 _MaxBLUFOR = 25;
+
+if (PMC_debug) then
+{
+	private _pmcMsg = format["PMC_SOG_RealWar1; _MaxOPFOR: %1, _MaxBLUFOR: %2, time: %3", _MaxOPFOR, _MaxBLUFOR, time];
+	diag_log _pmcMsg;
+	player sideChat _pmcMsg;
+};
 
 // send editor groups
 [usinf1] execVM "PMC\PMC_Send_Editor_Groups.sqf";
@@ -34,9 +43,7 @@ _MaxBLUFOR = 25;
 while {true} do
 {
 	// choose random target position
-	_r = (floor random _targetNum);
-	_t = (PMC_targets select _r);
-	_targetpoint = getPosASL _t;
+	_targetpoint = getPosASL (selectRandom PMC_targets);
 
 	waitUntil
 	{
@@ -48,8 +55,20 @@ while {true} do
 	{
 		_respawnpoint = ["OPFOR"] call PMC_SelectStartPosit;
 		[] call PMC_Create_Inf_Guard_VC;
+		if (PMC_debug) then
+		{
+			_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_VC, _respawnpoint: %1, time: %2", _respawnpoint, time];
+			diag_log _pmcMsg;
+			PMCHQ sideChat _pmcMsg;
+		};
 		_respawnpoint = ["OPFOR"] call PMC_SelectStartPosit;
 		[] call PMC_Create_Inf_Patrol_NVA;
+		if (PMC_debug) then
+		{
+			_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Patrol_NVA, _respawnpoint: %1, time: %2", _respawnpoint, time];
+			diag_log _pmcMsg;
+			PMCHQ sideChat _pmcMsg;
+		};
 	};
 
 	if (count list PMC_blufor_list < _MaxBLUFOR) then
@@ -63,87 +82,172 @@ while {true} do
 			case 0:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_Army;
-				if (PMC_debug) then {PMCHQ sideChat "random guard army created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_Army, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 1:
 		    	{
 				[] call PMC_Create_Inf_Patrol_US_Army;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol army created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Patrol_US_Army, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 2:
 		    	{
 				[_respawnpoint] call PMC_Create_Inf_Guard_US_Aircav;
-				if (PMC_debug) then {PMCHQ sideChat "random guard aircav created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_Aircav, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 3:
 		    	{
 				[] call PMC_Create_Inf_Patrol_US_Aircav;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol aircav created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Patrol_US_Aircav, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 4:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_USMC;
-				if (PMC_debug) then {PMCHQ sideChat "random guard USMC created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_USMC, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 5:
 		    	{
 				[] call PMC_Create_Inf_Patrol_US_USMC;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol USMC created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Patrol_US_USMC, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 6:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_MFR;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol MFR created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_MFR, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 7:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_MFR_heavy;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol MFR heavy created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_MFR_heavy, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 8:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_SEAL;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol SEAL created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_SEAL, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 9:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_SEAL_heavy;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol SEAL heavy created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_SEAL_heavy, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 10:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_Army_sniper;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol army sniper created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_Army_sniper, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 11:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_USMC_sniper;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol USMC sniper created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_USMC_sniper, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 12:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_SF;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol SF created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_SF, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 13:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_SF_recon;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol SF recon created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_SF_recon, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 14:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_SF_sniper;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol SF sniper created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_SF_sniper, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 15:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_LRRP;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol LRRP created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_LRRP, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		    	case 16:
 		    	{
 				[] call PMC_Create_Inf_Guard_US_LRRP_heavy;
-				if (PMC_debug) then {PMCHQ sideChat "random patrol LRRP heavy created.";};
+				if (PMC_debug) then
+				{
+					_pmcMsg = format["PMC_SOG_RealWar1; PMC_Create_Inf_Guard_US_LRRP_heavy, _respawnpoint: %1, time: %2", _respawnpoint, time];
+					diag_log _pmcMsg;
+					PMCHQ sideChat _pmcMsg;
+				};
 		    	};
 		};
 	};
