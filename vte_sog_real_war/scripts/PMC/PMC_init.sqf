@@ -1,10 +1,18 @@
 
+// 1965-01-15T06:00:00Z
+setDate [1965, 1, 15, 6, 0];
+
 [] execVM "PMC\PMC_LoadStatus.sqf";
 
 PMCHQ = [ West, "HQ" ];
 
+// random call sign for player and huey
+call compile preprocessFileLineNumbers "PMC\PMC_Radio_Callsign_Random.sqf";
+private _playerCallSign = [group player] call PMC_Radio_Callsign_Random;
+private _transportHeloCallSign = [group pmc_huey1] call PMC_Radio_Callsign_Random;
+
 [1.1] execVM "PMC\PMC_weather_sp.sqf";
-[] execVM "PMC\PMC_Briefing.sqf";
+[_playerCallSign, _transportHeloCallSign] execVM "PMC\PMC_Briefing.sqf";
 
 // debug on
 PMC_debug = true;
@@ -38,7 +46,6 @@ call compile preprocessFileLineNumbers "PMC\PMC_Create_Inf_Guard_US_SF_sniper.sq
 call compile preprocessFileLineNumbers "PMC\PMC_Create_Inf_Guard_US_LRRP.sqf";
 call compile preprocessFileLineNumbers "PMC\PMC_Create_Inf_Guard_US_LRRP_heavy.sqf";
 //call compile preprocessFileLineNumbers "PMC\PMC_SOG_RealWar_Create_Marker.sqf";
-call compile preprocessFileLineNumbers "PMC\PMC_Radio_Callsign_Random.sqf";
 
 // special support groups, medics on support waypoint
 [getPos PMC_blufor_start_1] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
@@ -94,10 +101,4 @@ PMC_Objective_4 = false;
 [player, "PMC_Helo_Transport", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 [player, "PMC_endMission_Debug", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 
-// random call sign for player
-[group player] call PMC_Radio_Callsign_Random;
-
 [pmc_1] execVM "PMC\PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf";
-
-// custom radio call sign for transport huey
-[group pmc_huey1] call PMC_Radio_Callsign_Random;

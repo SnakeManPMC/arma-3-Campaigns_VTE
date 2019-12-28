@@ -4,7 +4,7 @@ Give random radio callsign to the group.
 
 No idea what happens if you run this on multiplayer, sorry hehe ;)
 
-[group] execVM "PMC\PMC_Radio_Callsign_Random.sqf";
+_myCallSign = [group] execVM "PMC\PMC_Radio_Callsign_Random.sqf";
 
 */
 PMC_Radio_Callsign_Random =
@@ -83,6 +83,8 @@ PMC_Radio_Callsign_Random =
 
 	_name = (selectRandom _list_names);
 	_color = (selectrandom _list_numbers);
+	private _radioCallSign = format ["%1 %2", _name, _color];
 
-	_grp setGroupId [format ["%1 %2", _name, _color]];
+	_grp setGroupId [_radioCallSign];
+	_radioCallSign
 };
