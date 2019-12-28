@@ -7,8 +7,7 @@ PMCHQ = [ West, "HQ" ];
 [] execVM "PMC\PMC_Briefing.sqf";
 
 // debug on
-PMC_debug = false;
-publicVariable "PMC_debug";
+PMC_debug = true;
 
 // init shizzle, otherwise you get undefined variable errors
 PMC_grpNum = 0;
@@ -47,7 +46,6 @@ call compile preprocessFileLineNumbers "PMC\PMC_Radio_Callsign_Random.sqf";
 
 // corpse removal
 PMC_killedNum = 0;
-publicVariable "PMC\PMC_killedNum";
 PMC_corpses = [];
 [75] execVM "PMC\PMC_corpses.sqf";
 

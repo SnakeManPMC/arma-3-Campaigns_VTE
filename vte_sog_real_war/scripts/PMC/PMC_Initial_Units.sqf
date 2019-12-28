@@ -23,10 +23,13 @@ private
 _pos = call PMC_Select_Target;
 _MaxOPFOR = _this select 0;
 
+/* haxx0r
 waitUntil
 {
-	(count list PMC_opfor_list > 0);
+	(!isNil "PMC_opfor_list");
 };
+*/
+sleep 1;
 
 while { (count list PMC_opfor_list < _MaxOPFOR) } do
 {
@@ -43,7 +46,7 @@ while { (count list PMC_opfor_list < _MaxOPFOR) } do
 
 	if (PMC_debug) then
 	{
-		diag_log "PMC_Initial_Units; create gooks!"; player sidechat "created gooks!";
+		diag_log "PMC_Initial_Units; create gooks!"; player sideChat "PMC_Initial_Units; create gooks!";
 	};
 };
 

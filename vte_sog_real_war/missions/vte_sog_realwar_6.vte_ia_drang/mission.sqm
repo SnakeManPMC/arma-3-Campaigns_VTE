@@ -181,7 +181,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1173.3361,5.6282644,680.21698};
-						angles[]={0,0,0.05893977};
+						angles[]={-0,0,0.058931958};
 					};
 					side="West";
 					flags=6;
@@ -262,8 +262,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1178.3361,5.9232659,675.26697};
-						angles[]={0,0,0.05893977};
+						position[]={1178.3361,5.9232655,675.26697};
+						angles[]={-0,0,0.058931958};
 					};
 					side="West";
 					flags=4;
@@ -272,11 +272,9 @@ class Mission
 						skill=1;
 						rank="SERGEANT";
 						name="pmc_sog_2";
-						isPlayable=1;
 					};
 					id=4;
 					type="VTE_SOGR5";
-					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -345,7 +343,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1168.3361,5.1978755,675.26697};
-						angles[]={6.2621889,0,0.079831354};
+						angles[]={6.2621889,0,0.079830162};
 					};
 					side="West";
 					flags=4;
@@ -354,7 +352,6 @@ class Mission
 						skill=1;
 						rank="SERGEANT";
 						name="pmc_sog_3";
-						isPlayable=1;
 					};
 					id=5;
 					type="VTE_SOGR2";
@@ -425,8 +422,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1183.3361,6.218267,670.26697};
-						angles[]={0,0,0.05893977};
+						position[]={1183.3361,6.2182665,670.26697};
+						angles[]={-0,0,0.058931958};
 					};
 					side="West";
 					flags=4;
@@ -434,11 +431,9 @@ class Mission
 					{
 						skill=1;
 						name="pmc_sog_4";
-						isPlayable=1;
 					};
 					id=6;
 					type="VTE_SOGR4";
-					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -507,7 +502,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1163.3361,4.6928735,670.26697};
-						angles[]={6.2621889,0,0.079831354};
+						angles[]={6.2621889,0,0.079830162};
 					};
 					side="West";
 					flags=4;
@@ -515,7 +510,6 @@ class Mission
 					{
 						skill=1;
 						name="pmc_sog_5";
-						isPlayable=1;
 					};
 					id=7;
 					type="VTE_SOGR3";
@@ -587,7 +581,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1188.3361,6.5132627,665.26697};
-						angles[]={0,0,0.05893977};
+						angles[]={-0,0,0.058931958};
 					};
 					side="West";
 					flags=4;
@@ -595,7 +589,6 @@ class Mission
 					{
 						skill=1;
 						name="pmc_sog_6";
-						isPlayable=1;
 					};
 					id=8;
 					type="VTE_SOGR6";
@@ -672,33 +665,36 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={678.19702,-55.549999,1048.853};
+				position[]={678.19702,0.0026253611,1048.853};
 			};
 			name="PMC_blufor_start";
 			id=9;
 			type="Logic";
+			atlOffset=55.552624;
 		};
 		class Item4
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={897.02002,-55.549999,888.328};
+				position[]={897.02002,0.10459452,888.328};
 			};
 			name="PMC_opfor_start";
 			id=10;
 			type="Logic";
+			atlOffset=55.654594;
 		};
 		class Item5
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={479.121,-55.549999,1188.004};
+				position[]={479.121,0.053292185,1188.004};
 			};
 			name="PMC";
 			id=11;
 			type="Logic";
+			atlOffset=55.603291;
 		};
 		class Item6
 		{
@@ -930,7 +926,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2436.7373,162.06088,5824.9658};
+						position[]={2436.7373,162.06087,5824.9658};
 						angles[]={6.2531939,0,0.60330516};
 					};
 					side="East";
@@ -943,14 +939,13 @@ class Mission
 					};
 					id=67;
 					type="VTE_vcofficer";
-					atlOffset=1.5258789e-005;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2441.7373,165.35733,5820.0156};
+						position[]={2441.7373,165.35732,5820.0156};
 						angles[]={6.2531939,0,0.60330516};
 					};
 					side="East";
@@ -962,14 +957,13 @@ class Mission
 					};
 					id=68;
 					type="VTE_vcsoldier4";
-					atlOffset=1.5258789e-005;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2431.7373,158.46744,5820.0156};
+						position[]={2431.7373,158.46742,5820.0156};
 						angles[]={6.2531939,0,0.60330516};
 					};
 					side="East";
@@ -981,7 +975,6 @@ class Mission
 					};
 					id=69;
 					type="VTE_vcmg";
-					atlOffset=1.5258789e-005;
 				};
 				class Item3
 				{
@@ -1090,7 +1083,7 @@ class Mission
 				class Item9
 				{
 					dataType="Waypoint";
-					position[]={2436.7236,162.3139,5833.7129};
+					position[]={2436.7236,162.31389,5833.7129};
 					type="Guard";
 					combatMode="RED";
 					formation="LINE";
@@ -1101,14 +1094,12 @@ class Mission
 					};
 					showWP="NEVER";
 					id=109;
-					atlOffset=1.5258789e-005;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=66;
-			atlOffset=1.5258789e-005;
 		};
 		class Item8
 		{
@@ -1176,7 +1167,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11729.563,78.004051,9541.5908};
-				angles[]={0,3.2280445,0};
+				angles[]={-0,3.2280445,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1192,7 +1183,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11727.273,78.004051,9541.8457};
-				angles[]={0,3.2280445,0};
+				angles[]={-0,3.2280445,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1208,7 +1199,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11726.295,79.074196,9534.9805};
-				angles[]={0,0.067922562,0};
+				angles[]={-0,0.067922562,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1224,7 +1215,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11728.676,79.074196,9534.6279};
-				angles[]={0,0.067922562,0};
+				angles[]={-0,0.067922562,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2195,7 +2186,6 @@ class Mission
 			};
 			id=154;
 			type="VTE_flagcarrier_arvn";
-			atlOffset=-3.8146973e-006;
 		};
 		class Item43
 		{
@@ -2226,7 +2216,6 @@ class Mission
 			};
 			id=156;
 			type="vte_flagcarrier_usa";
-			atlOffset=-3.8146973e-006;
 		};
 		class Item45
 		{

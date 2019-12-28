@@ -3,5 +3,3 @@ author = "Snake Man, PMC.";
 overviewText = "PMC SOG Realwar 1. SOG Team is battling enemy in Ia Drang Valley near Plei Me SF base. Mission 6";
 overviewPicture = "";
 onLoadMission = "Studies and Observations Group";
-// shown at mission load even though real mission name is something else.
-//onLoadName = "SOG Rocks";
