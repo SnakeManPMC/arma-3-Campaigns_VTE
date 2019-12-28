@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=158;
+		nextID=161;
 	};
 	class MarkerIDProvider
 	{
@@ -133,7 +133,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=46;
+		items=49;
 		class Item0
 		{
 			dataType="Trigger";
@@ -2232,6 +2232,33 @@ class Mission
 			};
 			id=157;
 			type="vte_flagcarrier_usa";
+		};
+		class Item46
+		{
+			dataType="Marker";
+			position[]={11174.709,15.65,6774.3105};
+			name="pmc_marker_occupy_1";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=158;
+		};
+		class Item47
+		{
+			dataType="Marker";
+			position[]={10377.855,30.450001,8112.979};
+			name="pmc_marker_occupy_2";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=159;
+		};
+		class Item48
+		{
+			dataType="Marker";
+			position[]={10245.411,23.349222,6450.3892};
+			name="pmc_marker_occupy_3";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=160;
 		};
 	};
 	class Connections

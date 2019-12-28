@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=158;
+		nextID=170;
 	};
 	class MarkerIDProvider
 	{
@@ -133,7 +133,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=46;
+		items=58;
 		class Item0
 		{
 			dataType="Trigger";
@@ -2233,6 +2233,115 @@ class Mission
 			};
 			id=157;
 			type="vte_flagcarrier_usa";
+		};
+		class Item46
+		{
+			dataType="Marker";
+			position[]={11174.709,15.65,6774.3105};
+			name="pmc_marker_occupy_1";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=158;
+		};
+		class Item47
+		{
+			dataType="Marker";
+			position[]={7611.3159,20.877934,4807.8843};
+			name="pmc_marker_occupy_10";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=159;
+		};
+		class Item48
+		{
+			dataType="Marker";
+			position[]={6317.9375,23.549999,6074.0278};
+			name="pmc_marker_occupy_11";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=160;
+		};
+		class Item49
+		{
+			dataType="Marker";
+			position[]={7046.5166,27.729382,9367.5615};
+			name="pmc_marker_occupy_12";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=161;
+		};
+		class Item50
+		{
+			dataType="Marker";
+			position[]={10377.855,30.450001,8112.979};
+			name="pmc_marker_occupy_2";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=162;
+		};
+		class Item51
+		{
+			dataType="Marker";
+			position[]={10245.411,23.349222,6450.3892};
+			name="pmc_marker_occupy_3";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=163;
+		};
+		class Item52
+		{
+			dataType="Marker";
+			position[]={9901.5605,23.619572,7550.2886};
+			name="pmc_marker_occupy_4";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=164;
+			atlOffset=-32.656395;
+		};
+		class Item53
+		{
+			dataType="Marker";
+			position[]={8924.1729,24.450001,8479.7822};
+			name="pmc_marker_occupy_5";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=165;
+		};
+		class Item54
+		{
+			dataType="Marker";
+			position[]={9976.6162,23.35,9278.7676};
+			name="pmc_marker_occupy_6";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=166;
+		};
+		class Item55
+		{
+			dataType="Marker";
+			position[]={8129.1406,24.611794,5699.939};
+			name="pmc_marker_occupy_7";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=167;
+		};
+		class Item56
+		{
+			dataType="Marker";
+			position[]={7224.2378,42.200001,8328.5596};
+			name="pmc_marker_occupy_8";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=168;
+		};
+		class Item57
+		{
+			dataType="Marker";
+			position[]={7876.2412,22.200001,10073.218};
+			name="pmc_marker_occupy_9";
+			type="vte_faction_flag_arvn";
+			a=1.5;
+			id=169;
 		};
 	};
 	class Connections
