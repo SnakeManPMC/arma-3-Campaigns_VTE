@@ -15,9 +15,7 @@ PMC_Radio_Callsign_Random =
 		"_name",
 		"_color",
 		"_list_names",
-		"_list_numbers",
-		"_c",
-		"_ran"
+		"_list_numbers"
 	];
 
 	_list_names =
@@ -83,13 +81,8 @@ PMC_Radio_Callsign_Random =
 
 	_grp = _this select 0;
 
-	_c = (count _list_names) - 1;
-	_ran = random _c;
-	_name = (_list_names select _ran);
-
-	_c = (count _list_numbers) - 1;
-	_ran = random _c;
-	_color = (_list_names select _ran);
+	_name = (selectRandom _list_names);
+	_color = (selectrandom _list_numbers);
 
 	_grp setGroupId [format ["%1 %2", _name, _color]];
 };

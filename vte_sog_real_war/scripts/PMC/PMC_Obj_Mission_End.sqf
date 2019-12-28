@@ -30,6 +30,10 @@ while { !(PMC_Objective_0 && PMC_Objective_1 && PMC_Objective_2 && PMC_Objective
 hint "Objectives are met! Mission accomplished!";
 player sidechat "Yeah baby! Objectives are met!";
 
+sleep 3;
+["t1", "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
+sleep 3;
+
 // end mission!
 [] execVM "PMC\PMC_SaveStatus.sqf";
 sleep 10;
