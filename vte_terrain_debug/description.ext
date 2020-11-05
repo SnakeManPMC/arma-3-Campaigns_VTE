@@ -19,7 +19,7 @@ class MissionDefault
 
 class Campaign
 {
-	briefingName = "PMC VTE Terrain debug";
+	briefingName = "PMC VTE Terrain debug v0.1";
 	author = "Snake Man, PMC.";
 	overviewText = "Debug all the VTE terrains pretty automatic way.";
 	firstBattle = Beginning;
@@ -40,7 +40,7 @@ class Campaign
 		class cut_001: MissionDefault
 		{
 			end1 = cut_002;
-			template = vte_debug_cmp_01.VTE_intro;
+			template = vte_debug_cmp_01.vte_intro;
 		};
 
 		class cut_002: cut_001
@@ -58,109 +58,109 @@ class Campaign
 		class cut_004: cut_001
 		{
 			end1 = cut_005;
-			template = vte_debug_cmp_04.VTE_7M;
+			template = vte_debug_cmp_04.vte_7m;
 		};
 
 		class cut_005: cut_001
 		{
 			end1 = cut_006;
-			template = vte_debug_cmp_05.VTE_Ashau;
+			template = vte_debug_cmp_05.vte_ashau;
 		};
 
 		class cut_006: cut_001
 		{
 			end1 = cut_007;
-			template = vte_debug_cmp_06.VTE_AustralianAO;
+			template = vte_debug_cmp_06.vte_australianao;
 		};
 
 		class cut_007: cut_001
 		{
 			end1 = cut_008;
-			template = vte_debug_cmp_07.VTE_Bra;
+			template = vte_debug_cmp_07.vte_bra;
 		};
 
 		class cut_008: cut_001
 		{
 			end1 = cut_009;
-			template = vte_debug_cmp_08.VTE_Dak_Seang;
+			template = vte_debug_cmp_08.vte_dak_seang;
 		};
 
 		class cut_009: cut_001
 		{
 			end1 = cut_010;
-			template = vte_debug_cmp_09.VTE_KheSanh;
+			template = vte_debug_cmp_09.vte_khe_sanh;
 		};
 
 		class cut_010: cut_001
 		{
 			end1 = cut_011;
-			template = vte_debug_cmp_10.VTE_Ia_Drang;
+			template = vte_debug_cmp_10.vte_ia_drang;
 		};
 
 		class cut_011: cut_001
 		{
 			end1 = cut_012;
-			template = vte_debug_cmp_11.VTE_IronTriangle;
+			template = vte_debug_cmp_11.vte_iron_triangle;
 		};
 
 		class cut_012: cut_001
 		{
 			end1 = cut_013;
-			template = vte_debug_cmp_12.VTE_Ilo;
+			template = vte_debug_cmp_12.vte_ilo;
 		};
 
 		class cut_013: cut_001
 		{
 			end1 = cut_014;
-			template = vte_debug_cmp_13.VTE_IIICTZA;
+			template = vte_debug_cmp_13.vte_iiictza;
 		};
 
 		class cut_014: cut_001
 		{
 			end1 = cut_015;
-			template = vte_debug_cmp_14.VTE_LongSon;
+			template = vte_debug_cmp_14.vte_long_son;
 		};
 
 		class cut_015: cut_001
 		{
 			end1 = cut_016;
-			template = vte_debug_cmp_15.VTE_MDSZ;
+			template = vte_debug_cmp_15.vte_mdsz;
 		};
 
 		class cut_016: cut_001
 		{
 			end1 = cut_017;
-			template = vte_debug_cmp_16.VTE_MeeKong;
+			template = vte_debug_cmp_16.vte_meekong;
 		};
 
 		class cut_017: cut_001
 		{
 			end1 = cut_018;
-			template = vte_debug_cmp_17.VTE_PoleiKleng;
+			template = vte_debug_cmp_17.vte_polei_kleng;
 		};
 
 		class cut_018: cut_001
 		{
 			end1 = cut_019;
-			template = vte_debug_cmp_18.VTE_QuanBinhSon;
+			template = vte_debug_cmp_18.vte_quan_binh_son;
 		};
 
 		class cut_019: cut_001
 		{
 			end1 = cut_020;
-			template = vte_debug_cmp_19.VTE_RIJ;
+			template = vte_debug_cmp_19.vte_rij;
 		};
 
 		class cut_020: cut_001
 		{
 			end1 = cut_021;
-			template = vte_debug_cmp_20.VTE_RSSZ;
+			template = vte_debug_cmp_20.vte_rssz;
 		};
 
 		class cut_021: cut_001
 		{
 			end1 = cut_022;
-			template = vte_debug_cmp_21.VTE_VinhThanh;
+			template = vte_debug_cmp_21.vte_vinh_thanh;
 		};
 
 		class cut_022: cut_001
@@ -178,32 +178,32 @@ class Campaign
 		class cut_024: cut_001
 		{
 			end1 = cut_025;
-			template = vte_debug_cmp_24.VTE_FSB_Gloria;
+			template = vte_debug_cmp_24.vte_fsb_gloria;
 		};
 
 		class cut_025: cut_001
 		{
 			end1 = cut_026;
-			template = vte_debug_cmp_25.VTE_Tet68;
+			template = vte_debug_cmp_25.vte_tet68;
 		};
 		
 		// new terrains in v1.5
 		class cut_026: cut_001
 		{
 			end1 = cut_027;
-			template = vte_debug_cmp_26.VTE_ku_bao_tien;
+			template = vte_debug_cmp_26.vte_ku_bao_tien;
 		};
 
 		class cut_027: cut_001
 		{
 			end1 = cut_028;
-			template = vte_debug_cmp_27.VTE_pu_mat;
+			template = vte_debug_cmp_27.vte_pu_mat;
 		};
 
 		class cut_028: cut_001
 		{
 			end1 = pmc0;
-			template = vte_debug_cmp_28.VTE_si_thau;
+			template = vte_debug_cmp_28.vte_si_thau;
 		};
 
 		// player driven missions

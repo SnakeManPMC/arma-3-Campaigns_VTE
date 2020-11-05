@@ -1,0 +1,103 @@
+version=11;
+class Mission
+{
+	randomSeed=12881411;
+	class Intel
+	{
+		briefingName="Iron Triangle debug";
+		startWeather=0.400000;
+		startFog=0.600000;
+		forecastWeather=0.900000;
+		forecastFog=0.600000;
+		year=1995;
+		month=10;
+		day=1;
+		hour=12;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1635.267578,6.467858,1449.561523};
+					id=0;
+					side="WEST";
+					vehicle="VTE_acofficer";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.600000;
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1636.712891,6.546167,1451.124023};
+			a=0.000000;
+			b=0.000000;
+			activationBy="ALPHA";
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			text="End Mission";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=12254723;
+	class Intel
+	{
+		startWeather=0.400000;
+		startFog=0.600000;
+		forecastWeather=0.900000;
+		forecastFog=0.600000;
+		year=1964;
+		month=10;
+		day=1;
+		hour=5;
+	};
+};
+class OutroWin
+{
+	randomSeed=7317507;
+	class Intel
+	{
+		startWeather=0.400000;
+		startFog=0.600000;
+		forecastWeather=0.900000;
+		forecastFog=0.600000;
+		year=1964;
+		month=10;
+		day=1;
+		hour=5;
+	};
+};
+class OutroLoose
+{
+	randomSeed=13745667;
+	class Intel
+	{
+		startWeather=0.400000;
+		startFog=0.600000;
+		forecastWeather=0.900000;
+		forecastFog=0.600000;
+		year=1964;
+		month=10;
+		day=1;
+		hour=5;
+	};
+};
