@@ -134,7 +134,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=50;
+		items=49;
 		class Item0
 		{
 			dataType="Group";
@@ -883,193 +883,6 @@ class Mission
 		};
 		class Item5
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=10;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6486.7368,25.102663,5856.877};
-						angles[]={0.04596737,0,6.2631865};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.2;
-						rank="SERGEANT";
-						init="vcinf1 = group this;";
-					};
-					id=67;
-					type="VTE_vcofficer";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6491.7368,25.230371,5851.9268};
-						angles[]={0.04596737,0,6.2631865};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-						rank="CORPORAL";
-					};
-					id=68;
-					type="VTE_vcsoldier4";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6481.7368,25.430368,5851.9268};
-						angles[]={0.04596737,0,6.2631865};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-						rank="CORPORAL";
-					};
-					id=69;
-					type="VTE_vcmg";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6496.7368,25.425947,5846.9268};
-						angles[]={0.066899881,0,6.2631865};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-						rank="CORPORAL";
-					};
-					id=70;
-					type="VTE_vcrpg";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6476.7368,25.825956,5846.9268};
-						angles[]={0.066899881,0,6.2631865};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-						rank="CORPORAL";
-					};
-					id=71;
-					type="VTE_vcmedic";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6501.7368,25.650534,5841.9268};
-						angles[]={0.066900767,0,6.2571907};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=72;
-					type="VTE_vcsoldier3";
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6471.7368,26.260942,5841.9268};
-						angles[]={0.066899881,0,6.2631865};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=73;
-					type="VTE_vcsoldier";
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6506.7368,25.855545,5836.9268};
-						angles[]={0.066900767,0,6.2571907};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=74;
-					type="VTE_vcsoldier2";
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6466.7368,26.695969,5836.9268};
-						angles[]={0.066899881,0,6.2631865};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.2;
-					};
-					id=75;
-					type="VTE_vcsoldier3";
-				};
-				class Item9
-				{
-					dataType="Waypoint";
-					position[]={6486.7231,24.729696,5865.624};
-					type="Guard";
-					combatMode="RED";
-					formation="LINE";
-					speed="FULL";
-					combat="AWARE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=109;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=66;
-		};
-		class Item6
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -1083,7 +896,7 @@ class Mission
 			id=99;
 			type="VTE_AmmoBoxUS";
 		};
-		class Item7
+		class Item6
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1098,7 +911,7 @@ class Mission
 			id=100;
 			type="VTE_AmmoBoxUS";
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1113,7 +926,7 @@ class Mission
 			id=101;
 			type="VTE_WeaponBoxUS";
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1128,7 +941,7 @@ class Mission
 			id=102;
 			type="VTE_WeaponBoxUS";
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1144,7 +957,7 @@ class Mission
 			id=103;
 			type="VTE_AmmoBoxUS";
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1160,7 +973,7 @@ class Mission
 			id=104;
 			type="VTE_AmmoBoxUS";
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1176,7 +989,7 @@ class Mission
 			id=105;
 			type="VTE_WeaponBoxUS";
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1192,7 +1005,7 @@ class Mission
 			id=106;
 			type="VTE_WeaponBoxUS";
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1203,7 +1016,7 @@ class Mission
 			id=113;
 			type="Logic";
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1214,7 +1027,7 @@ class Mission
 			id=114;
 			type="Logic";
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1226,7 +1039,7 @@ class Mission
 			id=115;
 			type="Logic";
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1238,7 +1051,7 @@ class Mission
 			id=116;
 			type="Logic";
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1250,7 +1063,7 @@ class Mission
 			id=117;
 			type="Logic";
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1262,7 +1075,7 @@ class Mission
 			id=118;
 			type="Logic";
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1273,7 +1086,7 @@ class Mission
 			id=119;
 			type="Logic";
 		};
-		class Item21
+		class Item20
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1284,7 +1097,7 @@ class Mission
 			id=120;
 			type="Logic";
 		};
-		class Item22
+		class Item21
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1296,7 +1109,7 @@ class Mission
 			id=121;
 			type="Logic";
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1307,7 +1120,7 @@ class Mission
 			id=122;
 			type="Logic";
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1318,7 +1131,7 @@ class Mission
 			id=123;
 			type="Logic";
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1409,7 +1222,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1499,7 +1312,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1646,7 +1459,7 @@ class Mission
 				nAttributes=7;
 			};
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Group";
 			side="West";
@@ -1774,7 +1587,7 @@ class Mission
 			};
 			id=135;
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1789,7 +1602,7 @@ class Mission
 			id=140;
 			type="VTE_81mm_mortar";
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1804,7 +1617,7 @@ class Mission
 			id=141;
 			type="VTE_81mm_mortar";
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1819,7 +1632,7 @@ class Mission
 			id=142;
 			type="VTE_81mm_mortar";
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1834,7 +1647,7 @@ class Mission
 			id=143;
 			type="VTE_81mm_mortar";
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1844,7 +1657,7 @@ class Mission
 			id=144;
 			type="SupportProvider_Artillery";
 		};
-		class Item34
+		class Item33
 		{
 			dataType="Group";
 			side="West";
@@ -2071,7 +1884,7 @@ class Mission
 			};
 			id=145;
 		};
-		class Item35
+		class Item34
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2087,7 +1900,7 @@ class Mission
 			id=149;
 			type="vte_uh1a";
 		};
-		class Item36
+		class Item35
 		{
 			dataType="Marker";
 			position[]={11727.851,77.800003,9538.4072};
@@ -2097,7 +1910,7 @@ class Mission
 			colorName="ColorKhaki";
 			id=150;
 		};
-		class Item37
+		class Item36
 		{
 			dataType="Marker";
 			position[]={11657.358,55.549999,7887.3232};
@@ -2107,7 +1920,7 @@ class Mission
 			colorName="ColorKhaki";
 			id=151;
 		};
-		class Item38
+		class Item37
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2122,7 +1935,7 @@ class Mission
 			id=152;
 			type="MASH_EP1";
 		};
-		class Item39
+		class Item38
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2138,7 +1951,7 @@ class Mission
 			id=153;
 			type="MASH_EP1";
 		};
-		class Item40
+		class Item39
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2154,7 +1967,7 @@ class Mission
 			type="VTE_flagcarrier_arvn";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item41
+		class Item40
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2169,7 +1982,7 @@ class Mission
 			id=155;
 			type="VTE_flagcarrier_arvn";
 		};
-		class Item42
+		class Item41
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2185,7 +1998,7 @@ class Mission
 			type="vte_flagcarrier_usa";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item43
+		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2200,7 +2013,7 @@ class Mission
 			id=157;
 			type="vte_flagcarrier_usa";
 		};
-		class Item44
+		class Item43
 		{
 			dataType="Marker";
 			position[]={11174.709,15.65,6774.3105};
@@ -2209,7 +2022,7 @@ class Mission
 			a=1.5;
 			id=158;
 		};
-		class Item45
+		class Item44
 		{
 			dataType="Marker";
 			position[]={10377.855,30.450001,8112.979};
@@ -2218,7 +2031,7 @@ class Mission
 			a=1.5;
 			id=159;
 		};
-		class Item46
+		class Item45
 		{
 			dataType="Marker";
 			position[]={10245.411,23.349222,6450.3892};
@@ -2227,7 +2040,7 @@ class Mission
 			a=1.5;
 			id=160;
 		};
-		class Item47
+		class Item46
 		{
 			dataType="Marker";
 			position[]={9901.5605,23.619572,7550.2886};
@@ -2237,7 +2050,7 @@ class Mission
 			id=161;
 			atlOffset=-32.656395;
 		};
-		class Item48
+		class Item47
 		{
 			dataType="Marker";
 			position[]={8924.1729,24.450001,8479.7822};
@@ -2246,7 +2059,7 @@ class Mission
 			a=1.5;
 			id=162;
 		};
-		class Item49
+		class Item48
 		{
 			dataType="Marker";
 			position[]={9976.6162,23.35,9278.7676};

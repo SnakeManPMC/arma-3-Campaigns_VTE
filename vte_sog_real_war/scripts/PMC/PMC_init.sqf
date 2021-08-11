@@ -1,4 +1,6 @@
 
+PMC_DisableAICreationDebug = true;
+
 // 1965-01-15T06:00:00Z
 setDate [1965, 1, 15, 6, 0];
 
@@ -49,8 +51,12 @@ call compile preprocessFileLineNumbers "PMC\PMC_Create_Inf_Guard_US_LRRP_heavy.s
 //call compile preprocessFileLineNumbers "PMC\PMC_SOG_RealWar_Create_Marker.sqf";
 
 // special support groups, medics on support waypoint
-[getPos PMC_blufor_start_1] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
-[getPos PMC_blufor_start_2] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
+if (!PMC_DisableAICreationDebug) then
+{
+	diag_log format["PMC_Init; %1, creating two USMC support groups.", time];
+	[getPos PMC_blufor_start_1] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
+	[getPos PMC_blufor_start_2] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
+};
 
 // corpse removal
 PMC_killedNum = 0;
@@ -75,7 +81,11 @@ if (PMC_debug) then
 	player sidechat format["count PMC_targets: %1", (count PMC_targets)];
 };
 // populate the landscape with small enemy groups
-[20] execVM "PMC\PMC_Initial_Units.sqf";
+if (!PMC_DisableAICreationDebug) then
+{
+	diag_log format["PMC_Init; %1, running PMC_Initial_Units.sqf", time];
+	[20] execVM "PMC\PMC_Initial_Units.sqf";
+};
 
 // create objectives
 [50, 60] execVM "PMC\PMC_objectivesALL.sqf";
@@ -89,7 +99,11 @@ PMC_Objective_4 = false;
 [] execVM "PMC\PMC_Obj_Mission_End.sqf";
 
 // run the main war loopers
-[] execVM "PMC\PMC_sog_realwar1.sqf";
+if (!PMC_DisableAICreationDebug) then
+{
+	diag_log format["PMC_Init; %1, running PMC_sog_realwar1.sqf", time];
+	[] execVM "PMC\PMC_sog_realwar1.sqf";
+};
 
 // throw player's squad into random start point.
 [] execVM "PMC\PMC_SOG_RealWar_Player_Starting_Location.sqf";
@@ -103,4 +117,8 @@ PMC_Objective_4 = false;
 [player, "PMC_endMission_Debug", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 
 // ambient aircraft, kinda in this campaign at least
-[pmc_1] execVM "PMC\PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf";
+if (!PMC_DisableAICreationDebug) then
+{
+	diag_log format["PMC_Init; %1, running PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf", time];
+	[pmc_1] execVM "PMC\PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf";
+};
