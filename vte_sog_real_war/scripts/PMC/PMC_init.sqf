@@ -2,6 +2,7 @@
 // 1965-01-15T06:00:00Z
 setDate [1965, 1, 15, 6, 0];
 
+// players group units loadStatus
 [] execVM "PMC\PMC_LoadStatus.sqf";
 
 PMCHQ = [ West, "HQ" ];
@@ -11,7 +12,7 @@ call compile preprocessFileLineNumbers "PMC\PMC_Radio_Callsign_Random.sqf";
 private _playerCallSign = [group player] call PMC_Radio_Callsign_Random;
 private _transportHeloCallSign = [group pmc_huey1] call PMC_Radio_Callsign_Random;
 
-[1.1] execVM "PMC\PMC_weather_sp.sqf";
+[1.1] execVM "PMC\PMC_weather_SP.sqf";
 [_playerCallSign, _transportHeloCallSign] execVM "PMC\PMC_Briefing.sqf";
 
 // debug on
@@ -101,4 +102,5 @@ PMC_Objective_4 = false;
 [player, "PMC_Helo_Transport", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 [player, "PMC_endMission_Debug", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 
+// ambient aircraft, kinda in this campaign at least
 [pmc_1] execVM "PMC\PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf";

@@ -48,10 +48,10 @@ while {true} do
 	waitUntil
 	{
 		sleep 3;
-		( (count list PMC_opfor_list < _MaxOPFOR) || (count list PMC_blufor_list < _MaxBLUFOR) );
+		( (EAST countSide allUnits < _MaxOPFOR) || (WEST countSide allUnits < _MaxBLUFOR) );
 	};
 
-	if (count list PMC_opfor_list < _MaxOPFOR) then
+	if (EAST countSide allUnits < _MaxOPFOR) then
 	{
 		_respawnpoint = ["OPFOR"] call PMC_SelectStartPosit;
 		[] call PMC_Create_Inf_Guard_VC;
@@ -71,7 +71,7 @@ while {true} do
 		};
 	};
 
-	if (count list PMC_blufor_list < _MaxBLUFOR) then
+	if (WEST countSide allUnits < _MaxBLUFOR) then
 	{
 		_respawnpoint = ["BLUFOR"] call PMC_SelectStartPosit;
 
