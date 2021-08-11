@@ -133,6 +133,17 @@ class CfgCommunicationMenu
 		enable = "1";
 		removeAfterExpressionCall = 0;
 	};
+
+	class PMC_DebugTeleport
+	{
+		text = "PMC_DebugTeleport";
+		submenu = "";
+		expression = "_this execVM 'PMC\PMC_DebugTeleport.sqf';";
+		icon = "";
+		cursor = "";
+		enable = "1";
+		removeAfterExpressionCall = 0;
+	};
 };
 
 class CfgDebriefing

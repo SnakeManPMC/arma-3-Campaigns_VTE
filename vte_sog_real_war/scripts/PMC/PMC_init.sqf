@@ -115,6 +115,7 @@ if (!PMC_DisableAICreationDebug) then
 [player, "PMC_debug_onoff", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 [player, "PMC_Helo_Transport", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 [player, "PMC_endMission_Debug", nil, nil, ""] call BIS_fnc_addCommMenuItem;
+[player, "PMC_DebugTeleport", nil, nil, ""] call BIS_fnc_addCommMenuItem;
 
 // ambient aircraft, kinda in this campaign at least
 if (!PMC_DisableAICreationDebug) then
