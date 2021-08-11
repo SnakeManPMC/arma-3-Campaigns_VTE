@@ -91,7 +91,7 @@ if (!PMC_DisableAICreationDebug) then
 };
 
 // create objectives
-[50, 60] execVM "PMC\PMC_objectivesALL.sqf";
+[50, 60] execVM "PMC\PMC_ObjectivesALL.sqf";
 
 // mission ending task and triggers
 PMC_Objective_0 = false;

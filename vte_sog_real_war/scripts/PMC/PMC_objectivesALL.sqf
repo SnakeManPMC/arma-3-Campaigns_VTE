@@ -11,7 +11,6 @@ When activated they launch PMC\PMC_Obj_TriggerActivated.sqf with marker name
 private
 [
 	"_a",
-	"_color",
 	"_m",
 	"_markerobj",
 	"_PMC_t",
@@ -19,7 +18,6 @@ private
 	"_tlogic",
 	"_triggerArea",
 	"_triggerTimeout",
-	"_z",
 	"_PMC_CreateTriggers"
 ];
 
@@ -33,33 +31,51 @@ _PMC_CreateTriggers =
 	_m = format ["PMC_Objective_%1", _a];
 	_markerobj = createMarker [_m, _targetpoint];
 	_markerobj setMarkerShape "ELLIPSE";
-	_markerobj setMarkerColor "ColorBlack"; // or "ColorWhite"
+	_markerobj setMarkerColor "ColorBlack";
 	_markerobj setMarkerBrush "Solid";
 	_markerobj setMarkerSize [_triggerArea, _triggerArea];
 
-	[west, [_m], ["Capture this objective.", _m, _markerobj], _targetpoint, 1, 2, true] call BIS_fnc_taskCreate;
+	private _taskDescription = format["Capture <marker name='%1'>%2</marker> objective.", _markerobj, _m];
+	[west, [_m], [_taskDescription, _m, _markerobj], _targetpoint, 1, 2, true] call BIS_fnc_taskCreate;
 
 	private _pmcCond = "this and 'Land' counttype thisList > 0";
-	// BLUFOR
-	_z = createTrigger ["EmptyDetector", _targetpoint];
-	_z setTriggerActivation ["WEST SEIZED", "PRESENT", true];
-	_z setTriggerArea [_triggerArea, _triggerArea, 0, true];
-	_z setTriggerTimeout [0, (_triggerTimeout/2), _triggerTimeout, true];
-	_z setTriggerStatements [_pmcCond, format ["0 = ['PMC_Objective_%1', 'blufor'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
 
-	// OPFOR
-	_z = createTrigger ["EmptyDetector", _targetpoint];
-	_z setTriggerActivation ["EAST SEIZED", "PRESENT", true];
-	_z setTriggerArea [_triggerArea, _triggerArea, 0, true];
-	_z setTriggerTimeout [0, (_triggerTimeout/2), _triggerTimeout, true];
-	_z setTriggerStatements [_pmcCond, format ["0 = ['PMC_Objective_%1', 'opfor'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
+	// launch objective / task monitoring code
+	[_m, _markerobj] spawn
+	{
+		// PMC_Objective1 etc string
+		private _m = _this select 0;
+		// marker object ;)
+		private _markerobj = _this select 1;
+		
+		private _bluforPresent = false;
+		private _opforPresent = false;
 
-	// Guerrilla
-	_z = createTrigger ["EmptyDetector", _targetpoint];
-	_z setTriggerActivation ["GUER SEIZED", "PRESENT", true];
-	_z setTriggerArea [_triggerArea, _triggerArea, 0, true];
-	_z setTriggerTimeout [0, (_triggerTimeout/2), _triggerTimeout, true];
-	_z setTriggerStatements [_pmcCond, format ["0 = ['PMC_Objective_%1', 'guer'] execVM 'PMC\PMC_Obj_TriggerActivated.sqf';",_a], ""];
+		// wait for random time so we dont spam many of these monitor scripts at the same second
+		sleep (2 + random 5);
+
+		while {true} do
+		{
+			sleep 10;
+
+			// BLUFOR
+			if (!_bluforPresent && count (units west inAreaArray _markerobj) > 0 && count (units east inAreaArray _markerobj) == 0) then
+			{
+				_bluforPresent = true;
+				_opforPresent = false;
+				[_m, "blufor"] execVM "PMC\PMC_Obj_TriggerActivated.sqf";
+			};
+
+			// OPFOR
+			if (!_opforPresent && count (units east inAreaArray _markerobj) > 0 && count (units west inAreaArray _markerobj) == 0) then
+			{
+				_bluforPresent = false;
+				_opforPresent = true;
+				[_m, "opfor"] execVM "PMC\PMC_Obj_TriggerActivated.sqf";
+			};
+		};
+
+	};
 };
 
 // create objectives
