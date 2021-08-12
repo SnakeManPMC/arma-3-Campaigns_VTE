@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11625.32,102.8,9524.3975};
-		dir[]={0.88734794,-0.44626904,-0.11610685};
-		up[]={0.44250494,0.89489448,-0.057900559};
-		aside[]={-0.12974185,1.5125261e-007,-0.99155802};
+		pos[]={10245.196,26.229864,6424.9312};
+		dir[]={0.126001,-0.093314566,0.98763472};
+		up[]={0.011809517,0.99563628,0.092566639};
+		aside[]={0.99196333,-3.6132406e-008,-0.12655325};
 	};
 };
 binarizationWanted=0;
@@ -95,6 +95,33 @@ randomSeed=209696;
 class ScenarioData
 {
 	author="PMC Since 1984";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Intro
 {

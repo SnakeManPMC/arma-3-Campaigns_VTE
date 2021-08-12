@@ -2,7 +2,7 @@
 // PMC_StartMission.sqf is ran on every mission start, do not put mission specific stuff here.
 
 // disable AI creation for debug purposes
-PMC_DisableAICreationDebug = true;
+PMC_DisableAICreationDebug = false;
 
 // 1965-01-15T06:00:00Z
 setDate [1965, 1, 15, 6, 0];
@@ -83,6 +83,7 @@ if (PMC_debug) then
 	diag_log format["PMC_init; PMC_targets select 5: %1", PMC_targets select 5];
 	player sidechat format["count PMC_targets: %1", (count PMC_targets)];
 };
+
 // populate the landscape with small enemy groups
 if (!PMC_DisableAICreationDebug) then
 {

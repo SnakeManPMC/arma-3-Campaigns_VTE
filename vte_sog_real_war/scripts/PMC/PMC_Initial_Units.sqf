@@ -31,7 +31,7 @@ waitUntil
 */
 sleep 1;
 
-while { (count list PMC_opfor_list < _MaxOPFOR) } do
+while { (EAST countSide allUnits < _MaxOPFOR) } do
 {
 	// random location, unfortunately can be where player is hehe
 	_pos = getPos (call PMC_Select_Target);

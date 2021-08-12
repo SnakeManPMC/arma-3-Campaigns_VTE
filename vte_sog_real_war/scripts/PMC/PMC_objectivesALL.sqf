@@ -88,7 +88,7 @@ _triggerTimeout = _this select 1;
 while { _a < (count PMC_targets) } do
 {
 	_tlogic = (_PMC_t select _a);
-	_targetpoint = getPosASL _tlogic;
+	_targetpoint = getPosATL _tlogic;
 
 	[_a, _targetpoint, _triggerArea, _triggerTimeout] call _PMC_CreateTriggers;
 

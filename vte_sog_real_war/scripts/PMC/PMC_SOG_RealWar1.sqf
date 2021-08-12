@@ -37,7 +37,8 @@ if (PMC_debug) then
 
 // send editor groups
 [usinf1] execVM "PMC\PMC_Send_Editor_Groups.sqf";
-[vcinf1] execVM "PMC\PMC_Send_Editor_Groups.sqf";
+// gook group was removed from editor?
+//[vcinf1] execVM "PMC\PMC_Send_Editor_Groups.sqf";
 
 // never ending loop to create units
 while {true} do
