@@ -27,6 +27,9 @@ diag_log format
 	PMC_cu
 ];
 
+/*
+2021-08-12T01:36:00Z strange setup here, support menu debug on/off which is the actual display debug at the same time, err okay :)
+disabled for now, I want to either loop the debug or just show it when I want to.
 if (PMC_debug) then
 {
 	PMC_debug = false;
@@ -37,3 +40,4 @@ else
 	PMC_debug = true;
 	player sideChat "PMC_debug is now ON.";
 };
+*/

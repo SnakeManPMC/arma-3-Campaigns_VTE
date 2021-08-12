@@ -98,10 +98,9 @@ class Campaign
 
 class CfgCommunicationMenu
 {
-	// pmctodo remove debug before release
-	class PMC_debug_onoff
+	class PMC_DebugStats
 	{
-		text = "PMC Debug on/off";
+		text = "PMC Debug Stats";
 		submenu = "";
 		expression = "_this execVM 'PMC\PMC_Debug.sqf';";
 		icon = "";
@@ -116,18 +115,6 @@ class CfgCommunicationMenu
 		text = "Helicopter Transport";
 		submenu = "";
 		expression = "_this execVM 'PMC\PMC_Helo_Transport_Comms_Menu.sqf';";
-		icon = "";
-		cursor = "";
-		enable = "1";
-		removeAfterExpressionCall = 0;
-	};
-
-	// pmctodo remove debug end mission cheat before release
-	class PMC_endMission_Debug
-	{
-		text = "Debug: End Mission";
-		submenu = "";
-		expression = "'pmc_end1' call BIS_fnc_endMission;";
 		icon = "";
 		cursor = "";
 		enable = "1";
