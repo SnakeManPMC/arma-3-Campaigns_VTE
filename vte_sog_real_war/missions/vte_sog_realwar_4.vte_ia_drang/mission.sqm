@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=167;
+		nextID=169;
 	};
 	class MarkerIDProvider
 	{
@@ -1080,28 +1080,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11612.561,55.549999,7913.6221};
-			};
-			name="PMC_1";
-			id=119;
-			type="Logic";
-		};
-		class Item20
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={11697.612,77.800003,9545.7412};
-			};
-			name="PMC_2";
-			id=120;
-			type="Logic";
-		};
-		class Item21
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={7611.5068,20.865904,4807.7637};
 				angles[]={6.2372179,0,6.2491984};
 			};
@@ -1109,7 +1087,7 @@ class Mission
 			id=121;
 			type="Logic";
 		};
-		class Item22
+		class Item20
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1120,7 +1098,7 @@ class Mission
 			id=122;
 			type="Logic";
 		};
-		class Item23
+		class Item21
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1132,7 +1110,7 @@ class Mission
 			id=123;
 			type="Logic";
 		};
-		class Item24
+		class Item22
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1223,7 +1201,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item25
+		class Item23
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1313,7 +1291,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item26
+		class Item24
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1460,7 +1438,7 @@ class Mission
 				nAttributes=7;
 			};
 		};
-		class Item27
+		class Item25
 		{
 			dataType="Group";
 			side="West";
@@ -1592,7 +1570,7 @@ class Mission
 			};
 			id=135;
 		};
-		class Item28
+		class Item26
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1608,7 +1586,7 @@ class Mission
 			id=140;
 			type="VTE_81mm_mortar";
 		};
-		class Item29
+		class Item27
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1624,7 +1602,7 @@ class Mission
 			id=141;
 			type="VTE_81mm_mortar";
 		};
-		class Item30
+		class Item28
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1640,7 +1618,7 @@ class Mission
 			id=142;
 			type="VTE_81mm_mortar";
 		};
-		class Item31
+		class Item29
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1656,7 +1634,7 @@ class Mission
 			id=143;
 			type="VTE_81mm_mortar";
 		};
-		class Item32
+		class Item30
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1667,7 +1645,7 @@ class Mission
 			id=144;
 			type="SupportProvider_Artillery";
 		};
-		class Item33
+		class Item31
 		{
 			dataType="Group";
 			side="West";
@@ -1894,7 +1872,7 @@ class Mission
 			};
 			id=145;
 		};
-		class Item34
+		class Item32
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1910,7 +1888,7 @@ class Mission
 			id=149;
 			type="vte_uh1a";
 		};
-		class Item35
+		class Item33
 		{
 			dataType="Marker";
 			position[]={11727.851,77.800003,9538.4072};
@@ -1920,7 +1898,7 @@ class Mission
 			colorName="ColorKhaki";
 			id=150;
 		};
-		class Item36
+		class Item34
 		{
 			dataType="Marker";
 			position[]={11657.358,55.549999,7887.3232};
@@ -1930,7 +1908,7 @@ class Mission
 			colorName="ColorKhaki";
 			id=151;
 		};
-		class Item37
+		class Item35
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1945,7 +1923,7 @@ class Mission
 			id=152;
 			type="MASH_EP1";
 		};
-		class Item38
+		class Item36
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1961,7 +1939,7 @@ class Mission
 			id=153;
 			type="MASH_EP1";
 		};
-		class Item39
+		class Item37
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1977,7 +1955,7 @@ class Mission
 			type="VTE_flagcarrier_arvn";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item40
+		class Item38
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1992,7 +1970,7 @@ class Mission
 			id=155;
 			type="VTE_flagcarrier_arvn";
 		};
-		class Item41
+		class Item39
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2008,7 +1986,7 @@ class Mission
 			type="vte_flagcarrier_usa";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item42
+		class Item40
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2023,7 +2001,7 @@ class Mission
 			id=157;
 			type="vte_flagcarrier_usa";
 		};
-		class Item43
+		class Item41
 		{
 			dataType="Marker";
 			position[]={11174.709,15.65,6774.3105};
@@ -2032,7 +2010,7 @@ class Mission
 			a=1.5;
 			id=158;
 		};
-		class Item44
+		class Item42
 		{
 			dataType="Marker";
 			position[]={10377.855,30.450001,8112.979};
@@ -2041,7 +2019,7 @@ class Mission
 			a=1.5;
 			id=159;
 		};
-		class Item45
+		class Item43
 		{
 			dataType="Marker";
 			position[]={10245.411,23.349222,6450.3892};
@@ -2050,7 +2028,7 @@ class Mission
 			a=1.5;
 			id=160;
 		};
-		class Item46
+		class Item44
 		{
 			dataType="Marker";
 			position[]={9901.5605,23.619572,7550.2886};
@@ -2060,7 +2038,7 @@ class Mission
 			id=161;
 			atlOffset=-32.656395;
 		};
-		class Item47
+		class Item45
 		{
 			dataType="Marker";
 			position[]={8924.1729,24.450001,8479.7822};
@@ -2069,7 +2047,7 @@ class Mission
 			a=1.5;
 			id=162;
 		};
-		class Item48
+		class Item46
 		{
 			dataType="Marker";
 			position[]={9976.6162,23.35,9278.7676};
@@ -2078,7 +2056,7 @@ class Mission
 			a=1.5;
 			id=163;
 		};
-		class Item49
+		class Item47
 		{
 			dataType="Marker";
 			position[]={8129.1406,24.611794,5699.939};
@@ -2087,7 +2065,7 @@ class Mission
 			a=1.5;
 			id=164;
 		};
-		class Item50
+		class Item48
 		{
 			dataType="Marker";
 			position[]={7224.2378,42.200001,8328.5596};
@@ -2096,7 +2074,7 @@ class Mission
 			a=1.5;
 			id=165;
 		};
-		class Item51
+		class Item49
 		{
 			dataType="Marker";
 			position[]={7876.2412,22.200001,10073.218};
@@ -2104,6 +2082,28 @@ class Mission
 			type="vte_faction_flag_arvn";
 			a=1.5;
 			id=166;
+		};
+		class Item50
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7288.0371,1.0866455,8752.2217};
+			};
+			name="PMC_1";
+			id=167;
+			type="Logic";
+		};
+		class Item51
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6429.7983,1.165265,8478.8857};
+			};
+			name="PMC_2";
+			id=168;
+			type="Logic";
 		};
 	};
 	class Connections

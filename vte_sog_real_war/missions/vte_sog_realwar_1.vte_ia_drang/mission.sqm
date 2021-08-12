@@ -1107,7 +1107,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11613.275,55.549999,7913.8369};
+				position[]={10840.269,30.139456,8741.7432};
+				angles[]={0.084795304,0,6.2741885};
 			};
 			name="PMC_1";
 			id=119;
@@ -1118,7 +1119,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11697.701,77.800003,9548.8086};
+				position[]={11749.391,146.51839,8603.0625};
+				angles[]={0.21464182,0,0.18486476};
 			};
 			name="PMC_2";
 			id=120;
