@@ -53,7 +53,7 @@ call compile preprocessFileLineNumbers "PMC\PMC_Create_Inf_Guard_US_LRRP_heavy.s
 // special support groups, medics on support waypoint
 if (!PMC_DisableAICreationDebug) then
 {
-	diag_log format["PMC_Init; %1, creating two USMC support groups.", time];
+	diag_log format["PMC_StartMission; %1, creating two USMC support groups.", time];
 	[getPos PMC_blufor_start_1] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
 	[getPos PMC_blufor_start_2] execVM "PMC\PMC_Create_Inf_Support_US_USMC.sqf";
 };
@@ -72,19 +72,18 @@ waitUntil
 
 if (PMC_debug) then
 {
-	diag_log format["PMC_init; PMC_targets select 0: %1", PMC_targets select 0];
-	diag_log format["PMC_init; PMC_targets select 1: %1", PMC_targets select 1];
-	diag_log format["PMC_init; PMC_targets select 2: %1", PMC_targets select 2];
-	diag_log format["PMC_init; PMC_targets select 3: %1", PMC_targets select 3];
-	diag_log format["PMC_init; PMC_targets select 4: %1", PMC_targets select 4];
-	diag_log format["PMC_init; PMC_targets select 5: %1", PMC_targets select 5];
+	diag_log format["PMC_StartMission; PMC_targets select 0: %1", PMC_targets select 0];
+	diag_log format["PMC_StartMission; PMC_targets select 1: %1", PMC_targets select 1];
+	diag_log format["PMC_StartMission; PMC_targets select 2: %1", PMC_targets select 2];
+	diag_log format["PMC_StartMission; PMC_targets select 3: %1", PMC_targets select 3];
+	diag_log format["PMC_StartMission; PMC_targets select 4: %1", PMC_targets select 4];
 	player sidechat format["count PMC_targets: %1", (count PMC_targets)];
 };
 
 // populate the landscape with small enemy groups
 if (!PMC_DisableAICreationDebug) then
 {
-	diag_log format["PMC_Init; %1, running PMC_Initial_Units.sqf", time];
+	diag_log format["PMC_StartMission; %1, running PMC_Initial_Units.sqf", time];
 	[20] execVM "PMC\PMC_Initial_Units.sqf";
 };
 
@@ -102,7 +101,7 @@ PMC_Objective_4 = false;
 // run the main war loopers
 if (!PMC_DisableAICreationDebug) then
 {
-	diag_log format["PMC_Init; %1, running PMC_sog_realwar1.sqf", time];
+	diag_log format["PMC_StartMission; %1, running PMC_sog_realwar1.sqf", time];
 	[] execVM "PMC\PMC_sog_realwar1.sqf";
 };
 
@@ -120,6 +119,6 @@ if (!PMC_DisableAICreationDebug) then
 // ambient aircraft, kinda in this campaign at least
 if (!PMC_DisableAICreationDebug) then
 {
-	diag_log format["PMC_Init; %1, running PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf", time];
+	diag_log format["PMC_StartMission; %1, running PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf", time];
 	[pmc_1] execVM "PMC\PMC_Aircraft_VTE_BLUFOR_CUSTOM.sqf";
 };

@@ -9,7 +9,7 @@
 		"Capture All Objectives",
 		""
 	],
-	"",
+	[],
 	1,
 	2,
 	true
@@ -21,7 +21,7 @@ sleep 30;
 // loop until all objectives are met
 while { !(PMC_Objective_0 && PMC_Objective_1 && PMC_Objective_2 && PMC_Objective_3 && PMC_Objective_4) } do
 {
-	sleep 10;
+	sleep 20;
 };
 
 hint "Objectives are met! Mission accomplished!";

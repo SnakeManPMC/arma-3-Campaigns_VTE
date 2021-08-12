@@ -7,6 +7,7 @@ pmc_sog_4 loadStatus "PMC_SaveStatusSOG_4";
 pmc_sog_5 loadStatus "PMC_SaveStatusSOG_5";
 pmc_sog_6 loadStatus "PMC_SaveStatusSOG_6";
 
+/* 2021-08-12T02:40:00Z disabled because this doesnt really do anything.
 // do some calculation for reinformcent day here, for now we just set it to true, its on every mission load
 private _pmcReinfDay = true;
 
@@ -21,3 +22,4 @@ private _pmcReinfDay = true;
 		_pmcReinfDay = false;
 	};
 } forEach [pmc_sog_2, pmc_sog_3, pmc_sog_4, pmc_sog_5, pmc_sog_6];
+*/

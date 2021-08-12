@@ -25,7 +25,7 @@ _PMC_temptargets = [];
 _PMC_temptargets = PMC_targets;
 _waypointRanPosit = 100;
 // force levels, handicap because humans are so elite we dont need many BLUFOR.
-_MaxOPFOR = 80;
+_MaxOPFOR = 100;
 _MaxBLUFOR = 25;
 
 if (PMC_debug) then
