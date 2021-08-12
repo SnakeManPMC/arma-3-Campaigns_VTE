@@ -4,9 +4,6 @@
 // disable AI creation for debug purposes
 PMC_DisableAICreationDebug = false;
 
-// 1965-01-15T06:00:00Z
-setDate [1965, 1, 15, 6, 0];
-
 // players group units loadStatus
 [] execVM "PMC\PMC_LoadStatus.sqf";
 

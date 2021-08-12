@@ -1,2 +1,2 @@
 
-[] execVM "PMC\PMC_StartMission.sqf";
+[] execVM "PMC\PMC_Init.sqf";
