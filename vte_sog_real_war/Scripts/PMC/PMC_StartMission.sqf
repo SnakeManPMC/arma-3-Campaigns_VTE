@@ -14,7 +14,7 @@ call compile preprocessFileLineNumbers "PMC\PMC_Radio_Callsign_Random.sqf";
 private _playerCallSign = [group player] call PMC_Radio_Callsign_Random;
 private _transportHeloCallSign = [group pmc_huey1] call PMC_Radio_Callsign_Random;
 
-[1.1] execVM "PMC\PMC_weather_SP.sqf";
+[1.1] execVM "PMC\PMC_weather.sqf";
 [_playerCallSign, _transportHeloCallSign] execVM "PMC\PMC_Briefing.sqf";
 
 // debug on
