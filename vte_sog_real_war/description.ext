@@ -35,7 +35,7 @@ class Campaign
 	{
 		name = "Lets do this";
 		cutscene = ;
-		firstMission = pmc_m01;
+		firstMission = pmc_m008;
 		lost = ;
 		end1 = ;
 		end2 = ;
@@ -45,6 +45,7 @@ class Campaign
 		end6 = ;
 		pmc_end1 = ;
 
+/* 2021-10-01T22:08:00Z disabled for debug reasons, I wanna test Nui Chet missions, NOW :)
 		class pmc_m01: MissionDefault
 		{
 			pmc_end1 = pmc_m02;
@@ -85,6 +86,12 @@ class Campaign
 		{
 			pmc_end1 = ;
 			template = vte_sog_realwar_7.vte_ia_drang;
+		};
+*/
+		class pmc_m008: MissionDefault
+		{
+			pmc_end1 = ;
+			template = m008.vte_nui_chet;
 		};
 /*
 		class pmc_ending
