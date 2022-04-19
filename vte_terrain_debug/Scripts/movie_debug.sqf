@@ -19,12 +19,12 @@ private
 [
 	"_alt",
 	"_camera",
-	"_mapsize",
+	"_terrainSize",
 	"_PanSmoothness",
 	"_pantime"
 ];;
 
-_mapsize = _this select 0;
+_terrainSize = _this select 0;
 _alt = _this select 1;
 _pantime = _this select 2;
 _PanSmoothness = 3;
@@ -43,13 +43,13 @@ _camera cameraEffect ["internal","back"];;
 // across map edges camera
 
 // look to north west corner
-_camera camPrepareTarget [0, _mapsize, _alt];
+_camera camPrepareTarget [0, _terrainSize, _alt];
 // position at south east corner
-_camera camPreparePos [_mapsize, 0, _alt];
+_camera camPreparePos [_terrainSize, 0, _alt];
 _camera camCommitPrepared 0;
 waitUntil { camCommitted _camera; };
 // move to south east corner
-_camera camPreparePos [0, _mapsize, _alt];
+_camera camPreparePos [0, _terrainSize, _alt];
 // nice minute move time
 _camera camCommitPrepared _pantime;
 waitUntil { camCommitted _camera; };
@@ -59,7 +59,7 @@ waitUntil { camCommitted _camera; };
 // look to south west corner
 _camera camPrepareTarget [0, 0, _alt];
 // position at north east corner
-_camera camPreparePos [_mapsize, _mapsize, _alt];
+_camera camPreparePos [_terrainSize, _terrainSize, _alt];
 _camera camCommitPrepared 0;
 waitUntil { camCommitted _camera; };
 // small pause to at least some models can be loaded :)
