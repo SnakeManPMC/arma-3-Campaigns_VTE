@@ -6,7 +6,7 @@
 
 Syntax:
 players init line:
-this = [mapsize, altitude, seconds] execVM "movie_debug.sqf";
+this = [terrainSize, altitude, seconds] execVM "movie_debug.sqf";
 
 Requires:
 -
