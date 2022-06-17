@@ -106,7 +106,7 @@ class Mission
 			dataType="Marker";
 			position[]={547.27087,6.7049999,6758.375};
 			name="start";
-			text="@STR_START";
+			text="Start";
 			type="mil_start";
 			colorName="ColorGreen";
 			id=134;
@@ -117,7 +117,7 @@ class Mission
 			dataType="Marker";
 			position[]={930.91589,0.27442399,6954.7251};
 			name="target1";
-			text="@STR_TARGET1";
+			text="Snatch 1";
 			type="mil_unknown";
 			colorName="ColorRed";
 			id=135;
@@ -128,7 +128,7 @@ class Mission
 			dataType="Marker";
 			position[]={919.73285,0.27442399,6979.9688};
 			name="insert";
-			text="@STR_INSERT";
+			text="Insert LZ";
 			type="mil_flag";
 			colorName="ColorGreen";
 			id=136;
@@ -139,7 +139,7 @@ class Mission
 			dataType="Marker";
 			position[]={925.83313,0.27442399,6968.9888};
 			name="extract";
-			text="@STR_EXTRACT";
+			text="Extract LZ";
 			type="mil_pickup";
 			colorName="ColorBlue";
 			id=137;
